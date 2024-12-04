@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_term_of_use.css">
+    <script src="https://kit.fontawesome.com/3fb3c3bd87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navigation-con">
+        <div class="navigation">
+            <!-- Logo -->
+            <a href="/">
+                <img src="../asset/kfclogo.png" alt="KFC" class="logo">
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="name-nav">
+                <a href="#">COMPANY</a>
+                <a href="#">BRAND IMPACT</a>
+                <a href="#">CAREERS</a>
+                <a href="#">NEWSROOM</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-con">
+                <form>
+                    <input type="text">
+                </form>
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+            <!-- bars Icon -->
+            <div class="icon" id="menuIcon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="mark"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Full-Screen Menu Overlay -->
+    <div class="overlay" id="menuOverlay">
+        <a href="#" onclick="toggleMenu()">COMPANY</a>
+        <a href="#" onclick="toggleMenu()">BRAND IMPACT</a>
+        <a href="#" onclick="toggleMenu()">CAREERS</a>
+        <a href="#" onclick="toggleMenu()">NEWSROOM</a>
+        <a href="#" onclick="toggleMenu()">SEARCH</a>
+    </div>
+    <script>
+        function toggleMenu() {
+        // Get elements
+            const overlay = document.getElementById("menuOverlay");
+            const menuIconBars = document.getElementById("menuIcon").children[0]; // Bars icon
+            const menuIconClose = document.getElementById("menuIcon").children[1]; // Close icon
+            const navigationCon = document.querySelector(".navigation-con");
+        
+            // Toggle the overlay's visibility
+            overlay.classList.toggle("active");
+        
+            // Change the icon between bars and close (x)
+            if (overlay.classList.contains("active")) {
+                menuIconBars.style.display = "none"; // Hide bars
+                menuIconClose.style.display = "block"; // Show close icon
+                navigationCon.style.backgroundColor = "pink"; // Change navigation background to pink
+            } else {
+                menuIconBars.style.display = "block"; // Show bars
+                menuIconClose.style.display = "none"; // Hide close icon
+                navigationCon.style.backgroundColor = "white"; // Reset navigation background to white
+            }
+        }
+    </script>
+    <div class="container">
+        <div class="title">TERMS OF USE</div>
+        <div class="first-term">
+            <h1>KFC Colonel Heritage Image Library - Terms of Use</h1>
+            <p>To enter the library, please read these terms of use carefully and click “I agree” at the bottom of this page.
+
+            These Terms of Use (“Terms”) constitute a legal agreement between you and KFC Corporation (“KFC”). By clicking “I agree” below, you agree to be bound by these Terms. If you are accessing the KFC Colonel Heritage Image Library (the “Library”) on behalf of another entity, your agreement represents and warrants that you are authorized to accept the Terms on such entity’s behalf.</p>
+        </div>
+        <div class="second-term">
+            <h1>General Guidelines</h1>
+            <div class="detail">
+                <p><span class="dot">•</span>The images and videos contained in the Library are protected by copyright and other applicable intellectual property rights. Except as expressly permitted by these Terms, you may not download, copy, reproduce, publish, display, modify, adapt, or use any image or video in the Library, in whole or in part, in any way whatsoever.</p>
+                <p><span class="dot">•</span>  KFC reserves the right to require you to change or discontinue use of an image or video from the Library at any time. You agree to comply with any such instructions promptly upon receipt of notice from KFC.</p>
+                <p><span class="dot">•</span>  All your permitted use of images and videos from the Library must be accompanied by the statement: “Courtesy KFC Corporation. All rights reserved.”</p>
+            </div>
+        </div>
+        <div class="third-term">
+            <h1>Permitted Uses</h1>
+            <p>You may use images and videos from the Library as follows:</p>
+            <div class="detail">
+                <p><span class="dot">•</span> If you are a student, you may download and use images and videos from the Library for your own personal, non-commercial use in connection with educational purposes. This does not include the right to display or publish images and videos to the general public. Your use and any reproduction of images and videos must be limited to the extent necessary to achieve the applicable educational purpose.</p>
+                <p><span class="dot">•</span> If you are a credentialed or professional member of the news media, you may use images and videos from the Library in connection with broadcast, print or online news stories about KFC in established news media.</p>
+                <p><span class="dot">•</span> If you are a current KFC franchisee, you may use images and videos from the Library in connection with KFC business purposes that you are permitted to conduct under the terms of your other agreements with KFC.</p>
+            </div>
+            
+        </div>
+        <div class="fourth-term">
+            <h1>Restrictions</h1>
+            <p>As stated under “General Guidelines” above, all use of the images and videos in the Library is prohibited, other than the uses expressly permitted by these Terms. Without limiting the generality of the foregoing, the following constitute specific prohibited uses of the Library’s images and videos:</p>
+            <div class="detail">
+                <p><span class="dot">•</span> You may not use images and videos from the Library in any context that disparages KFC or its brands, products, employees, franchisees, or affiliates.</p>
+                <p><span class="dot">•</span> You may not sell, resell, license, or sublicense images and videos from the Library.</p>
+                <p><span class="dot">•</span> You may not use images and videos from the Library for any commercial purpose not affiliated with KFC.</p>
+                <p><span class="dot">•</span> You may not alter images and videos from the Library, except for cropping, enlargement, or reduction.</p>
+                <p><span class="dot">•</span> You may not remove any notice of copyright, trademark, or other proprietary right from any place where it is on or embedded in any image or video.</p>
+            </div>
+
+        </div>
+        <div class="fifth-term">
+            <h1>Indemnification</h1>
+            <p>You agree to defend, indemnify, and hold harmless KFC, its subsidiaries, affiliates, licensors, employees, agents, and independent contractors against any claims, damages, costs, liabilities, and expenses (including without limitation attorneys’ fees) arising out of or related to your use of any images obtained from the Library or any other breach or alleged breach of this agreement.</p>
+        </div>
+        <div class="sixth-term">
+            <h1>Disclaimer of Warranties/Limitation of Liability</h1>
+            <p>THE LIBRARY AND THE IMAGES AND VIDEOS IN THE LIBRARY ARE PROVIDED “AS IS” AND WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, KFC AND ITS OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, AND AFFILIATES DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION WARRANTIES OF TITLE, NONINFRINGEMENT, MERCHANTABILITY, SATISFACTORY QUALITY, AND FITNESS FOR A PARTICULAR PURPOSE.</p>
+            <p>KFC will not be liable for any damages of any kind arising from the use, or the inability to use, the Library or any image or video from the Library, including without limitation lost profits, business interruption, and direct, indirect, incidental, punitive, special, and consequential damages.</p>
+        </div>
+        <div class="seventh-term">
+            <h1>Termination</h1>
+            <p>KFC reserves the right, without notice and in its sole discretion, to terminate this agreement and to block your use of the Library and the images and videos contained in the Library.</p>
+            <h3>Change to Terms of Use</h3>
+            <p>KFC reserves the right to change these Terms, without notice at any time and in its sole discretion. You should review the Terms each time you access the Library to determine whether they have changed. Any changes will be effective immediately upon posting on this website. Your continued use of the Library following the posting of any changes to these Terms will constitute your acceptance of such changes.</p>
+        </div>
+        <div class="eight-term">
+            <h1>Miscellaneous</h1>
+            <p>Any waiver of any provision of these Terms will be effective only if in writing and signed by KFC, and no waiver by KFC of any breach or default of these Terms of Use shall be deemed a waiver as to any subsequent or similar breach or default. The provisions of this Agreement are independent of each other, and the invalidity or unenforceability of any term, clause, or provision hereof shall not affect the validity or enforceability of any other term, clause, or provision, and such invalid or unenforceable term, clause, or provision shall be deemed to be severed from this agreement. In the event that you breach any of the terms of this agreement or in the event of any other dispute between you and KFC, KFC may seek injunctive or other appropriate relief. This agreement shall be governed by and construed in accordance with the laws of the State of Kentucky without regard to conflict-of-laws principles. By clicking on “I Agree” below, you consent to the jurisdiction and venue of the courts, both federal and state, in the State of Kentucky. This agreement constitutes the entire understanding of the parties.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="red-rod">
+            <div class="rod"></div>
+            <div class="rod"></div>
+            <div class="rod"></div>
+        </div>
+        <div class="container-footer">
+            <div class="container-footer-item">
+                <div class="itemf">
+                    <div class="title-footer">Campany</div>
+                    <ul class="list">
+                        <a href="#"><li>Our Ambitions</li></a>
+                        <a href="#"><li>Our Leadership</li></a>
+                        <a href="#"><li>Our History</li></a>
+                        <a href="#"><li>Where We Dish It Up</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Brand Impact</div>
+                    <ul class="list">
+                        <a href="#"><li>People & Communities</li></a>
+                        <a href="#"><li>Chicken & Nutrition</li></a>
+                        <a href="#"><li>Suppliers & Climate</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Careers</div>
+                    <ul class="list">
+                        <a href="#"><li>Who We Are</li></a>
+                        <a href="#"><li>Working Here</li></a>
+                        <a href="#"><li>Job Search</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Newsroom</div>
+                    <ul class="list">
+                        <a href="#"><li>Press Releases</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Media Contacts</li></a>
+                        <a href="#"><li>Media Assets</li></a>
+                    </ul class="list">
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <a href="#">
+                <div class="circle">
+                    <h1>in</h1>
+                </div>
+            </a>
+        </div>
+        <div class="policy">
+            <p>Copyright &copy; 2024 Company Ltd. All rights reserved. <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/footer-pages/privacy-policy">Privacy Policy</a>  |  <a href="term_use/term_use.html">Terms of Use</a>  |  <a href="../sitemap/sitemap.html">Sitemap</a></p>
+        </div>
+    </footer>
+    <script>
+        const titles = document.querySelectorAll('.title-footer');
+
+        titles.forEach(title => {
+            title.addEventListener('click', () => {
+                const parentItem = title.parentElement;
+                const list = parentItem.querySelector('.list');
+
+                // If the list is already open, close it
+                if (list.style.display === 'block') {
+                    list.style.display = 'none';
+                    title.classList.remove('open');
+                } else {
+                    // Close all lists and remove the "open" class from all titles
+                    document.querySelectorAll('.list').forEach(otherList => {
+                    otherList.style.display = 'none';
+                });
+                    document.querySelectorAll('.title-footer').forEach(otherTitle => {
+                    otherTitle.classList.remove('open');
+                });
+
+                // Open the clicked list and rotate the arrow
+                list.style.display = 'block';
+                title.classList.add('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

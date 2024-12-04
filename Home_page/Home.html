@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC</title>
+    <link rel="stylesheet" href="style_home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/3fb3c3bd87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navigation-con">
+        <div class="navigation">
+            <!-- Logo -->
+            <a href="/">
+                <img src="asset/kfclogo.png" alt="KFC" class="logo">
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="name-nav">
+                <a href="#">COMPANY</a>
+                <a href="#">BRAND IMPACT</a>
+                <a href="#">CAREERS</a>
+                <a href="#">NEWSROOM</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-con">
+                <form>
+                    <input type="text">
+                </form>
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+            <!-- bars Icon -->
+            <div class="icon" id="menuIcon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="mark"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Full-Screen Menu Overlay -->
+    <div class="overlay" id="menuOverlay">
+        <a href="#" onclick="toggleMenu()">COMPANY</a>
+        <a href="#" onclick="toggleMenu()">BRAND IMPACT</a>
+        <a href="#" onclick="toggleMenu()">CAREERS</a>
+        <a href="#" onclick="toggleMenu()">NEWSROOM</a>
+        <a href="#" onclick="toggleMenu()">SEARCH</a>
+    </div>
+    <main>
+        <div class="stat">
+            
+            <div class="cont">
+                <div class="number" id="number" style="width: 200px;">0K+</div>
+                <div class="under"style="width: 200px;">Restaurants <span>s</span></div>
+            </div>
+            <div class="cont">
+                <div class="number" id="number1">0.1M</div>
+                <div class="under" style="width: 150px;">Team Members</div>
+            </div>
+            <div class="cont">
+                <div class="number" id="number2">0</div>
+                <div class="under" style="width: 200px;">Countries With KFC</div>
+            </div>
+            <div class="cont">
+                <div class="number" id="number3">1.0<span>HOURS</span></div>
+                <div class="under" style="width: 250px;">BEFORE NEXT KFC IS BUILT</div>
+            </div>
+        </div>
+        <div class="container-detail">
+            
+            <div class="detail">
+                <div class="item active">
+                    <div class="container-item">
+                        <div class="logo">
+                            <img src="asset/logo1.png" alt="">
+                        </div>
+                        <div class="detail-item">KFC, a subsidiary of Yum! Brands, has been serving craveworthy, finger lickin’ good food since 1952.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container-item">
+                        <div class="logo">
+                            <img src="asset/logo2.png" alt="">
+                        </div>
+                        <div class="detail-item">It all started with our chef and expert tastemaker, Colonel Harland Sanders, who went on a relentless mission to crack and create our iconic taste.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container-item">
+                        <div class="logo">
+                            <img src="asset/logo3.png" alt="">
+                        </div>
+                        <div class="detail-item">Today, we have the widest global footprint of any quick service restaurant brand and are one of the world’s fastest growing retail brands.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dots">
+                <button class="arrow left" id="prev-btn">&#10094;</button>
+                <button class="arrow right" id="next-btn">&#10095;</button>
+                <span class="dott active" data-slide="0"></span>
+                <span class="dott" data-slide="1"></span>
+                <span class="dott" data-slide="2"></span>
+            </div>
+        </div>
+
+        <div class="food">
+            <button class="carousel-btn prev">&lt;</button>
+            <div class="content">
+                <div class="slide active">
+                    <div class="lcont act1">
+                        <div class="title">chilli lime dunked burger</div>
+                        <div class="subtitle">south africa</div>
+                        <div class="detail-item">
+                            A spicy, tangy burger featuring a Zinger fillet
+                            dunked in a Chilli Lime sauce, topped with cheese, fresh Rainbow slaw and Colonel Dressing, served on a Brioche bun
+                        </div>
+                    </div>
+                    <div class="rcont">
+                        <img class="burger" src="asset/Burger.png" alt="">
+                        <img class="half" src="asset/burger-half.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="lcont act2">
+                        <div class="title">Original Crunch Bowl</div>
+                        <div class="subtitle">Australia</div>
+                        <div class="detail-item">
+                            Original Recipe Tenders chopped and served over Crunchy Slaw with Pepper Mayo and Corn Chips.
+                        </div>
+                    </div>
+                    <div class="rcont">
+                        <img class="burger" src="asset/Chrouch.png" alt="">
+                        <img class="half" src="asset/bowl-half.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="lcont act3">
+                        <div class="title">Smoky Rice Bowl</div>
+                        <div class="subtitle">India</div>
+                        <div class="detail-item">
+                            Our signature Smoky Chicken Leg served over buttery Yellow Rice and seasoned with Green Chili and Garlic, and topped with Rogini, an onion-tomato gravy.
+                        </div>
+                    </div>
+                    <div class="rcont">
+                        <img class="burger" src="asset/ricebowl.png" alt="">
+                        <img class="half" src="asset/rice-bowl-half.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn next">&gt;</button>
+            <div class="indicators">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+        <div class="about">
+            <div class="box a">
+                <div class="text">
+                    <h1>company</h1>
+                    <h3>We’re in the chicken business, but we’re also in thepeople business.</h3>
+                    <a href="#"><button>Learn More</button></a>
+                </div>
+            </div>
+            <div class="box b">
+                <div class="text">
+                    <h1>brand impact</h1>
+                    <h3>From kitchens to communities, we’re committed to doing things the right way.</h3>
+                    <a href="#"><button>Learn More</button></a>
+                </div>
+            </div>
+            <div class="box c">
+                <div class="text">
+                    <h1>careers</h1>
+                    <h3>Original recipe? Yes. Original careers? We’ve got those, too.</h3>
+                    <a href="#"><button>Learn More</button></a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="red-rod">
+                <div class="rod"></div>
+                <div class="rod"></div>
+                <div class="rod"></div>
+            </div>
+            <div class="container-footer">
+                <div class="container-footer-item">
+                    <div class="itemf">
+                        <div class="title-footer">Campany</div>
+                        <ul class="list">
+                            <a href="#"><li>Our Ambitions</li></a>
+                            <a href="#"><li>Our Leadership</li></a>
+                            <a href="#"><li>Our History</li></a>
+                            <a href="#"><li>Where We Dish It Up</li></a>
+                        </ul class="list">
+                    </div>
+                    <div class="itemf">
+                        <div class="title-footer">Brand Impact</div>
+                        <ul class="list">
+                            <a href="#"><li>People & Communities</li></a>
+                            <a href="#"><li>Chicken & Nutrition</li></a>
+                            <a href="#"><li>Suppliers & Climate</li></a>
+                        </ul class="list">
+                    </div>
+                    <div class="itemf">
+                        <div class="title-footer">Careers</div>
+                        <ul class="list">
+                            <a href="#"><li>Who We Are</li></a>
+                            <a href="#"><li>Working Here</li></a>
+                            <a href="#"><li>Job Search</li></a>
+                        </ul class="list">
+                    </div>
+                    <div class="itemf">
+                        <div class="title-footer">Newsroom</div>
+                        <ul class="list">
+                            <a href="#"><li>Press Releases</li></a>
+                            <a href="#"><li>Blog</li></a>
+                            <a href="#"><li>Media Contacts</li></a>
+                            <a href="#"><li>Media Assets</li></a>
+                        </ul class="list">
+                    </div>
+                </div>
+            </div>
+            <div class="profile">
+                <a href="#">
+                    <div class="circle">
+                        <h1>in</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="policy">
+                <p>Copyright &copy; 2024 Company Ltd. All rights reserved. <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/footer-pages/privacy-policy">Privacy Policy</a>  |  <a href="term_use/term_use.html">Terms of Use</a>  |  <a href="sitemap/sitemap.html">Sitemap</a></p>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
