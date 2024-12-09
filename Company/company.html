@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company</title>
+    <link rel="stylesheet" href="companystyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Anton SC' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/3fb3c3bd87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navigation-con">
+        <div class="navigation">
+            <!-- Logo -->
+            <a href="/">
+                <img src="pic/logo.png" alt="KFC" class="logo">
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="name-nav">
+                <a href="company.html">COMPANY</a>
+                <a href="#">BRAND IMPACT</a>
+                <a href="#">CAREERS</a>
+                <a href="#">NEWSROOM</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-con">
+                <form>
+                    <input type="text">
+                </form>
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+            <!-- bars Icon -->
+            <div class="icon" id="menuIcon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="mark"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Full-Screen Menu Overlay -->
+    <div class="overlay" id="menuOverlay">
+        <a href="company.html" onclick="toggleMenu()">COMPANY</a>
+        <a href="#" onclick="toggleMenu()">BRAND IMPACT</a>
+        <a href="#" onclick="toggleMenu()">CAREERS</a>
+        <a href="#" onclick="toggleMenu()">NEWSROOM</a>
+        <a href="#" onclick="toggleMenu()">SEARCH</a>
+    </div>
+
+    <!-- For picture-->
+    <div class="pic-all">
+        <img src="pic/img-all.jpg" alt="staff" class="pic-staff">
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="pic/pic1.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="pic/pic3.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="pic/pic2.jpg" style="width:100%;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="pic/pic4.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="pic/pic5.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="pic/pic6.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="pic/pic7.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="pic/pic8.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="pic/pic9.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+    </div>
+        
+    <div style="text-align:center" class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+    </div>
+
+    <div class="text-1">
+        <h1>OUR COMPANY</h1>
+        <div class="yapping">
+            <p>We believe in the transformative power of fried chicken, done the right way. It's not just about taste, oh no.</p>
+            <p>It's about the moments we create, the careers we nurture, the communities we grow, and the joy we spark.</p>
+            <p>We’re deeply rooted in the communities we serve, growing our business sustainably, and putting our values into action with a genuine passion for our planet and social good.</p>
+        </div>
+        <div class="redBox-con">
+            <div class="redBox"></div>
+            <div class="redBox"></div>
+            <div class="redBox"></div>
+        </div>
+    </div>
+
+    <!-- Ambition-->
+    <div class="ambition-con">
+        <img src="pic/ambition pic.jpg" alt="Ambition Background" class="ambition-bg">
+        <div class="ambition-text">
+            <h2>OUR AMBITIONS</h2>
+            <div class="ambition-p">
+                <p>Being the world’s favorite fried chicken is hard work.</p>
+            </div>
+            <a href="ambition.html" class="button-ambitions">Learn More</a>
+        </div>
+    </div>    
+
+    <!--Leaderships-->
+    <div class="leader-con">
+        <div class="">
+
+        </div>
+        <div class="leader-title">
+            <h2>OUR LEADERSHIP</h2>
+            <P>Meet the leadership driving KFC forward</P>
+        </div>
+        <div class="leader-album">
+            <ul class="leader">
+                <li>
+                    <a href="sabir.html" class="leader-pic">
+                        <div class="pic-album">
+                            <img src="pic/Sami.jpg" alt="Sabir Sami" class="album">
+                        </div>
+                        <div class="name-leader">
+                            <h3>Sabir Sami</h3>
+                            <p>Chief Executive Officer</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="alex.html" class="leader-pic">
+                        <div class="pic-album">
+                            <img src="pic/Alex.jpg" alt="Alex Barsk" class="album">
+                        </div>
+                        <div class="name-leader">
+                            <h3>Alex Barsk</h3>
+                            <p>Chief Financial Officer</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="val.html" class="leader-pic">
+                        <div class="pic-album">
+                            <img src="pic/Val.jpg" alt="Val Kubizniak" class="album">
+                        </div>
+                        <div class="name-leader">
+                            <h3>Val Kubizniak</h3>
+                            <p>Chief Maketing Officer</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="judd.html" class="leader-pic">
+                        <div class="pic-album">
+                            <img src="pic/Judd.png" alt="Judd Knight" class="album">
+                        </div>
+                        <div class="name-leader">
+                            <h3>Judd Knight</h3>
+                            <p>Chief Digital & Technology Officer</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="vinod.html" class="leader-pic">
+                        <div class="pic-album">
+                            <img src="pic/vinod.jpg" alt="Vinod Mahboobani" class="album">
+                        </div>
+                        <div class="name-leader">
+                            <h3>Vinod Mahboobani</h3>
+                            <p>Chief Legal Officer, KFC & Pizza Hut</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="rob.html" class="leader-pic">
+                        <div class="pic-album">
+                            <img src="pic/rob.jpg" alt="Rob Swain" class="album">
+                        </div>
+                        <div class="name-leader">
+                            <h3>Rob Swain</h3>
+                            <p>Chief Operations Officer</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="megan.html" class="leader-pic">
+                        <div class="pic-album">
+                            <img src="pic/megan.jpg" alt="Megan Verret" class="album">
+                        </div>
+                        <div class="name-leader"> 
+                            <h3>Megan Verret</h3>
+                            <p>Chief People Officer</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="nivera.html" class="leader-pic">
+                        <div class="pic-album">
+                            <img src="pic/Nivera.jpg" alt="Nivera Wallani" class="album">
+                        </div>
+                        <div class="name-leader">
+                            <h3>Nivera Wallani</h3>
+                            <p>Chief Development Officer</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="history">
+        <img src="pic/history.jpg" alt="history picture" class="history-bg">
+        <div class="history-text">
+            <h2>OUR HISTORY</h2>
+            <div class="history-p">One man. One irresistible Original Recipe.</div>
+            <a href="history.html" class="history-link">Learn More</a>
+        </div>
+    </div>
+
+    <!--locations-->
+    <div class="location-con">
+        <div class="pic-con">
+            <img src="pic/location-pic.jpg" alt="location" class="location">
+        </div>
+        <div class="location-text-con">
+            <div class="location-text">
+                <h2>WHERE WE DISH IT UP</h2>
+                <div class="location-p">30,000 KFCs and growing</div>
+            </div>
+            <div class="location-choose">
+                <button class="location-button">
+                    <span>Select Location</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="location-place-con">
+                <div class="location-place">
+                    <img src="pic/africa.svg" alt="Africa Globe" class="place-pic">
+                    <div class="place-text">
+                        <h3>AFRICA</h3>
+                        <div class="place-p">
+                            <ul>
+                                <li>Year: 1971</li>
+                                <li>1,400+ restaurants</li>
+                                <li>Fun fact: Since 2009, KFC South Africa has served more than 250 million meals with a bold goal of serving 500 million meals by 2030.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>               
+                <div class="location-place">
+                    <img src="pic/asia.svg" alt="Africa Globe" class="place-pic">
+                    <div class="place-text">
+                        <h3>ASIA</h3>
+                        <div class="place-p">
+                            <ul>
+                                <li>Year: 1966</li>
+                                <li>4,000+ restaurants</li>
+                                <li>Fun fact: Our team in Taiwan shared KFC’s very first AI-created team member Kala by in 2024.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>     
+                <div class="location-place">
+                    <img src="pic/australia.svg" alt="Africa Globe" class="place-pic">
+                    <div class="place-text">
+                        <h3>AUSTRALIA</h3>
+                        <div class="place-p">
+                            <ul>
+                                <li>Year: 1968</li>
+                                <li>800+ restaurants</li>
+                                <li>Fun fact: More than 90% of KFC team members in Australia are under the age of 25, making us one of the largest employers of young Aussies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+                <div class="location-place">
+                    <img src="pic/canada.svg" alt="Canada Globe" class="place-pic">
+                    <div class="place-text">
+                        <h3>CANADA</h3>
+                        <div class="place-p">
+                            <ul>
+                                <li>Year: 1955</li>
+                                <li>4,000+ restaurants</li>
+                                <li>Fun fact: The Colonel’s trademark white suits were tailored in Toronto, Ontario.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>  
+                <div class="location-place">
+                    <img src="pic/china.svg" alt="China Globe" class="place-pic">
+                    <div class="place-text">
+                        <h3>CHINA</h3>
+                        <div class="place-p">
+                            <ul>
+                                <li>Year: 1987</li>
+                                <li>10,000+ restaurants</li>
+                                <li>Fun fact: KFC's menu in China includes fried chicken, egg tarts, congee, and steamed dumplings.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+                <div class="location-place">
+                    <img src="pic/europe.svg" alt="Europe Globe" class="place-pic">
+                    <div class="place-text">
+                        <h3>EUROPE</h3>
+                        <div class="place-p">
+                            <ul>
+                                <li>Year: 1965</li>
+                                <li>2,100+ restaurants</li>
+                                <li>Fun fact: KFC Europe serves customers from more than 35 countries.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+                <div class="location-place">
+                    <img src="pic/india.svg" alt="India Globe" class="place-pic">
+                    <div class="place-text">
+                        <h3>India</h3>
+                        <div class="place-p">
+                            <ul>
+                                <li>Year: 1995</li>
+                                <li>1,100+ restaurants</li>
+                                <li>Fun fact: In 2013, India’s first ever KFC restaurant to be managed and powered by an all-women team was launched.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+                <div class="location-place">
+                    <img src="pic/latin.svg" alt="Latin America & Carribean Globe" class="place-pic">
+                    <div class="place-text">
+                        <h3>LATIN AMERICA & CARRIBEAN</h3>
+                        <div class="place-p">
+                            <ul>
+                                <li>Year: 1973</li>
+                                <li>1,800+ restaurants</li>
+                                <li>Fun fact: KFC’s famous Zinger was created in Trinidad & Tobago over 40 years ago.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+                <div class="location-place">
+                    <img src="pic/middle.svg" alt="MIDDLE EAST, TURKEY & NORTH AFRICA Globe" class="place-pic">
+                    <div class="place-text">
+                        <h3>MIDDLE EAST, TURKEY & NORTH AFRICA</h3>
+                        <div class="place-p">
+                            <ul>
+                                <li>Year: 1973</li>
+                                <li>1,500+ restaurants</li>
+                                <li>Fun fact: KFC first launched its Rewards program in this region.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+                <div class="location-place">
+                    <img src="pic/THAI.svg" alt="Thailand Globe" class="place-pic">
+                    <div class="place-text">
+                        <h3>THAILAND</h3>
+                        <div class="place-p">
+                            <ul>
+                                <li>Year: 1984</li>
+                                <li>1,000+ restaurants</li>
+                                <li>Fun fact: As of 2023, KFC Thailand has won the "Best Brand Performance on Social Media" award at the Thailand Zocial Awards for eight years in a row.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+                <div class="location-place">
+                    <img src="pic/UK.svg" alt="United Kingdom & Ireland Globe" class="place-pic">
+                    <div class="place-text">
+                        <h3>UNITED KINGDOM & IRELAND</h3>
+                        <div class="place-p">
+                            <ul>
+                                <li>Year: 1965</li>
+                                <li>900+ restaurants</li>
+                                <li>Fun fact: KFC UK&I were the first market to launch the vegan burger in 2019.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-place">
+                    <img src="pic/US.svg" alt="United State Globe" class="place-pic">
+                    <div class="place-text">
+                        <h3>UNITED STATES</h3>
+                        <div class="place-p">
+                            <ul>
+                                <li>Year: 1952</li>
+                                <li>3,500+ restaurants</li>
+                                <li>Fun fact: The first KFC franchise restaurant was opened in Salt Lake City, Utah in 1952, not Kentucky.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="red-rod">
+            <div class="rod"></div>
+            <div class="rod"></div>
+            <div class="rod"></div>
+        </div>
+        <div class="container-footer">
+            <div class="container-footer-item">
+                <div class="itemf">
+                    <div class="title-footer">Campany</div>
+                    <ul class="list">
+                        <a href="#"><li>Our Ambitions</li></a>
+                        <a href="#"><li>Our Leadership</li></a>
+                        <a href="#"><li>Our History</li></a>
+                        <a href="#"><li>Where We Dish It Up</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Brand Impact</div>
+                    <ul class="list">
+                        <a href="#"><li>People & Communities</li></a>
+                        <a href="#"><li>Chicken & Nutrition</li></a>
+                        <a href="#"><li>Suppliers & Climate</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Careers</div>
+                    <ul class="list">
+                        <a href="#"><li>Who We Are</li></a>
+                        <a href="#"><li>Working Here</li></a>
+                        <a href="#"><li>Job Search</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Newsroom</div>
+                    <ul class="list">
+                        <a href="#"><li>Press Releases</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Media Contacts</li></a>
+                        <a href="#"><li>Media Assets</li></a>
+                    </ul class="list">
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <a href="#">
+                <div class="circle">
+                    <h1>in</h1>
+                </div>
+            </a>
+        </div>
+        <div class="policy">
+            <p>Copyright &copy; 2024 Company Ltd. All rights reserved. <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/footer-pages/privacy-policy">Privacy Policy</a>  |  <a href="term_use/term_use.html">Terms of Use</a>  |  <a href="sitemap/sitemap.html">Sitemap</a></p>
+        </div>
+    </footer>
+
+
+    <script>
+    function toggleMenu() {
+        // Get elements
+        const overlay = document.getElementById("menuOverlay");
+        const menuIconBars = document.getElementById("menuIcon").children[0]; // Bars icon
+        const menuIconClose = document.getElementById("menuIcon").children[1]; // Close icon
+        const navigationCon = document.querySelector(".navigation-con");
+
+        // Toggle the overlay's visibility
+        overlay.classList.toggle("active");
+
+        // Change the icon between bars and close (x)
+        if (overlay.classList.contains("active")) {
+            menuIconBars.style.display = "none"; // Hide bars
+            menuIconClose.style.display = "block"; // Show close icon
+            navigationCon.style.backgroundColor = "pink"; // Change navigation background to pink
+        } else {
+            menuIconBars.style.display = "block"; // Show bars
+            menuIconClose.style.display = "none"; // Hide close icon
+            navigationCon.style.backgroundColor = "white"; // Reset navigation background to white
+        }
+    }
+
+    </script>
+
+    <script>
+        let slideIndex = 0; // Start with the first slide
+
+// Function to show the next slide
+function showSlides() {
+    let slides = document.getElementsByClassName("mySlides"); // Get all slides
+    let dots = document.getElementsByClassName("dot"); // Get all dots
+
+    // Hide all slides and remove "active" class from all dots
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    // Increment the slideIndex
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1; // Reset to the first slide if it exceeds the number of slides
+    }
+
+    // Show the current slide and add the "active" class to the current dot
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+
+    // Change the slide every 2 seconds
+    setTimeout(showSlides, 2000); 
+}
+
+// Call the function to start the slideshow when the page loads
+showSlides();
+
+// Manual slide navigation with previous and next buttons
+function currentSlide(n) {
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    
+    if (n > slides.length) {
+        slideIndex = 1;
+    } else if (n < 1) {
+        slideIndex = slides.length;
+    } else {
+        slideIndex = n;
+    }
+
+    // Hide all slides and remove "active" class from dots
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    // Show the selected slide and add the "active" class to the corresponding dot
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+    </script>
+
+    <script>
+    // Select the necessary elements
+    const locationButton = document.querySelector('.location-button');
+    const dropdownMenu = document.createElement('ul');
+    const locationPlaces = document.querySelectorAll('.location-place');
+    const locationSection = document.querySelector('.location-con');
+
+    // Add dropdown menu to the DOM
+    dropdownMenu.classList.add('location-dropdown');
+    locationButton.parentNode.appendChild(dropdownMenu);
+
+    // Populate dropdown with country names
+    locationPlaces.forEach(place => {
+        const countryName = place.querySelector('.place-text h3').textContent;
+        const dropdownItem = document.createElement('li');
+        dropdownItem.textContent = countryName;
+        dropdownMenu.appendChild(dropdownItem);
+
+        // Add click event for each dropdown item
+        dropdownItem.addEventListener('click', () => {
+            // Hide all locations and remove active class
+            locationPlaces.forEach(p => p.classList.remove('active'));
+
+            // Show the selected location
+            place.classList.add('active');
+
+            // Blur the background
+            locationSection.classList.add('blur');
+
+            // Change the button text to the selected country
+            locationButton.textContent = countryName;
+
+            // Close the dropdown menu
+            dropdownMenu.classList.remove('visible');
+        });
+    });
+
+    // Toggle dropdown menu visibility when clicking the button
+    locationButton.addEventListener('click', () => {
+        if (dropdownMenu.classList.contains('visible')) {
+            dropdownMenu.classList.remove('visible'); // Close the dropdown
+        } else {
+            dropdownMenu.classList.add('visible'); // Open the dropdown
+        }
+    });
+
+    // Close dropdown menu when clicking outside
+    document.addEventListener('click', (event) => {
+        if (!locationButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.classList.remove('visible');
+        }
+    });
+
+    // Reset everything and remove blur when clicking outside a location's details
+    document.querySelectorAll('.location-place').forEach(place => {
+        place.addEventListener('click', () => {
+            // Remove the blur effect and reset
+            locationSection.classList.remove('blur');
+            locationPlaces.forEach(p => p.classList.remove('active'));
+            locationButton.textContent = 'Search Location'; // Reset button text
+        });
+    });
+
+
+
+    </script>
+
+    
+    
+</body>
+</html>
