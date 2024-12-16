@@ -3,33 +3,36 @@ body {
     margin: 0;
     color: black;
     font-size: 20px;
-    font-family: 'Anton SC'; /* font*/
-    letter-spacing: 0.5px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 h1 {
     font-size: 4rem;
     line-height: 1;
-    font-weight: 300;
+    font-weight: 700;
+    transform: scaleY(1.3);
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    letter-spacing: -2px;
 }
 
 h2 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     margin-block-start: 0.25em;
     margin-block-end: 0.25em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-weight: 300;
+    font-weight: 700;
+    transform: scaleY(1.2);
+    letter-spacing: -2px;
 }
 
 
 p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     letter-spacing: 0;
 }
 
@@ -70,10 +73,11 @@ p {
 }
 
 .name-nav{
-    font-size: 1.45rem;
-    font-weight: 300;
+    font-size: 1.25rem;
+    font-weight: 700;
     margin: auto;
     position: relative;
+    transform: scaleY(1.5);
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -93,7 +97,7 @@ p {
 }
 
 .name-nav a:hover{
-    color: red;
+    color: rgb(228, 0, 43);
 }
 
 
@@ -105,16 +109,17 @@ p {
     justify-self: flex-end;
     width: 14vw;
     position: relative;
-    background-color: white;
+    background-color: transparent;
 }
 
 input {
     width: 100%;
-    height: 50px;
+    height: 43px;
     border: none;
     border-radius: 30px;
     outline: none;
     padding-left: 10px;
+    background-color: transparent;
 }
 
 button {
@@ -123,6 +128,7 @@ button {
     cursor: pointer;
     color: black;
     margin-left: auto;
+    font-size: 1.7rem;
 }
 
 .icon {
@@ -141,7 +147,7 @@ button {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: red; /* Red background as shown in the screenshot */
+    background-color: rgb(228, 0, 43); /* Red background as shown in the screenshot */
     color: white;
     z-index: 999;
     flex-direction: column;
@@ -149,20 +155,20 @@ button {
     align-items: center;
     text-align: center;
     transition: background-color 0.3s ease; /* Smooth transition for visual effects */
-    gap: 10px;
+    gap: 25px;
     letter-spacing: 1px;
 }
 
 .overlay.active {
     display: flex;
-    background-color: red;
+    background-color: rgb(228, 0, 43);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
     font-size: 1em;
     text-align: center;
-    font-weight: 300;
+    font-weight: 800;
     z-index: 99;
 }
 
@@ -174,8 +180,10 @@ button {
 .overlay a {
     text-decoration: none;
     color: white;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
+    font-weight: 800;
+    transform: scaleY(1.5);
 }
 
 .overlay a:hover {
@@ -224,6 +232,50 @@ button {
         font-size: 1.25em;
     }
 
+    .history-text {
+        margin: auto;
+        padding-top: 0  !important;
+    }
+
+    h2.head {
+        font-size: 1.6rem !important;
+    }
+
+    h2 {
+        font-size: 2rem !important;
+        font-weight: 800;
+    }
+
+    .today-con h2 {
+        padding-bottom: 0 !important;
+    }
+
+    p {
+        font-size: 1.25rem !important;
+    }
+    
+    .time1 {
+        font-size: 1.8rem !important;
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+
+    .time2 {
+        font-size: 0.8rem !important;
+        padding-bottom: 0.3rem;
+    }
+
+    .history-text h1 {
+        margin-bottom: 1rem;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .history-p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 
 }
@@ -231,11 +283,6 @@ button {
 @media (max-width: 767px) {
     /* search */
 
-
-    .name-nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 
     .search-con {
         width: 90%; /* Expand search bar for small screens */
@@ -361,7 +408,7 @@ button {
     }
 
     .today-con {
-        padding-top: 7rem;
+        padding-top: 3rem;
     }
 
     .today-con h2 {
@@ -409,12 +456,13 @@ button {
     margin-right: auto;
 }
 .head{
-    font-size: 2rem;
+    font-size: 2.25rem !important;
     line-height: 1;
     border-bottom: 1px solid black;
     padding-bottom: 1rem;
     margin-top: 0;
 }
+
 
 nav {
     padding-bottom: 1.5rem;
@@ -448,15 +496,15 @@ a {
 }
 
 .col h2 {
-    font-size: 3rem;
+
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .story-text1 p{
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     line-height: 1.75rem;
-    font-weight: lighter;
+    letter-spacing: 1px;
 }
 
 .story-pic-con {
@@ -505,6 +553,7 @@ a {
     display: inline-block;
     font-weight: lighter;
     font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0;
 }
 
 .timeline-con {
@@ -551,6 +600,10 @@ a {
     margin: 0;
     background: none;
     border: none;
+}
+
+.time-button:first-child {
+    color: black;
 }
 
 .time-button.active {
@@ -682,15 +735,34 @@ a {
     }
 }
 @media (max-width: 767px) {
+    h2.head {
+        font-size: 1.4rem !important;
+        letter-spacing: -1px;
+        font-weight: 700;
+        transform: scaleY(1.2);
+    }
+
+    h2 {
+        font-size: 1.6rem !important;
+        font-weight: 700;
+        transform: scaleY(1.2);
+    }
+
+    p {
+        font-size: 0.97rem !important;
+    }
+
+
     .time1 {
-        font-size: 2.75rem;
+        font-size: 1.8rem;
         padding-top: 2rem;
         padding-bottom: 0;
     }
 
     .time2 {
-        font-size: 1.25rem;
-        padding-bottom: 0.5rem;
+        font-size: 0.8rem;
+        padding-bottom: 0.3rem;
+        letter-spacing: 0;
     }
 
     /* Hide horizontal timeline on small screens */
@@ -700,6 +772,7 @@ a {
 
     .timeline-small-con {
         display: block;
+        margin-top: 2rem;
     }
 
     /* Ensure straight-text elements are hidden by default */
@@ -712,7 +785,7 @@ a {
     }
 
     .straight-text-button {
-        color: rgb(209 213 219); /* Match the line color */
+        color: black; /* Match the line color */
     }
 
     .straight-text-button.active {
@@ -738,6 +811,20 @@ a {
     .today-text p {
         margin-top: 0;
     }
+    
+    .title-footer {
+        font-size: 1.5rem !important;
+    }
+
+    .list {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .container-footer-item {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
 }
 
 .today-con h2 {
@@ -751,6 +838,7 @@ a {
 }
 
 .today-text p {
+    letter-spacing: 1px;
     margin-bottom: 0;
     margin-top: 1.5rem;
 }
@@ -775,18 +863,19 @@ footer{
     height: auto;
     background-color: black;
     position: relative;
+    overflow: hidden;
 }
 .red-rod{
     display: flex;
     justify-content: center;
     gap: 30px;
     width: 100%;
-    height: 50px;
+    height: 40px;
 }
 .rod{
     width: 30px;
     height: 100%;
-    background-color: red;
+    background-color: rgb(228, 0, 43);
 }
 .container-footer{
     width: 100%;
@@ -806,7 +895,8 @@ footer{
     margin-right: auto;
     align-items: center;
     text-align: left;
-    max-width: 56rem;
+    max-width: 50rem;
+    width: 100%;
 }
 .itemf{
     display: flex;
@@ -817,7 +907,9 @@ ul{
     padding: 0;
 }
 ul > a > li{
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
 }
 .itemf > ul >  a{
     text-decoration: none;
@@ -827,9 +919,10 @@ ul > a > li{
 .container-footer-item >.itemf > .title-footer{
     text-transform: uppercase;
     color: white;
-    font-size: 28px;
+    font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 10px;
+    transform: scaleY(1.3);
 }
 .profile{
     width: 100%;
@@ -845,18 +938,29 @@ ul > a > li{
 .profile > a > .circle{
     display: flex;
     justify-content: center;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: white;
     align-items: center;
 }
+
+.profile > a > .circle > h1 {
+    font-size: 36px;
+    transform: scaleY(1);
+}
+
 .policy{
     width: 100%;
     color: white;
     text-align: center;
     padding-bottom: 1rem;
 }
+
+.policy > p {
+    font-size: 0.875rem;
+}
+
 .policy >p > a{
     color: white;
 }
@@ -886,7 +990,7 @@ ul > a > li{
         
         .container-footer{
             padding: 0;
-            width: auto;
+            width: 100%;
             padding-top: 1rem;
             padding-bottom: 1rem;
             
@@ -898,14 +1002,13 @@ ul > a > li{
             padding-left: 1rem;
             padding-right: 1rem;
             gap: 0;
-            margin-left: auto;
-            margin-right: auto;
+
         }
         .itemf{
             width: 97%;
             height: 25%;
             padding:13px 0px 7px 0px;
-            border-top: 2px solid white;
+            border-top: 3px solid white;
             align-items: center;
             margin: 0;
         }
