@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search :: KFC Global Careers</title>
+    <link rel="icon" type="image/x-icon" href="resource/working here img/kfc-icon.png">
+    <link rel="stylesheet" href="job-search.css">
+    <link href='https://fonts.googleapis.com/css?family=Anton SC' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navlogo">
+            <img src="https://careers.global.kfc.com/application/themes/thirty_three/assets/dist/img/kfc_brand_logo.png" alt="KFC logo">
+            <span>Careers</span>
+        </div>
+        <button class="hamburger-menu" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navlinks">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="whoweare.html">Who we are</a></li>
+            <li><a href="working-here.html">Working here</a></li>
+            <li><a href="job-search.html" class="active">Job search</a></li>
+        </ul>
+    </nav>
+
+    <section class="first-section">
+        <div class="search-container">
+            <h2>JOB SEARCH</h2>
+            <h1>YOU READY? BRING IT.</h1>
+            
+            <div class="search-form">
+                <div class="search-field">
+                    <label for="job-role">JOB ROLE</label>
+                    <input type="text" id="job-role" placeholder="Keywords">
+                </div>
+                
+                <div class="search-field">
+                    <label for="team">TEAM</label>
+                    <div class="custom-select">
+                        <div class="select-header" id="team">Select teams</div>
+                        <div class="options-container">
+                            <label class="option">
+                                <input type="checkbox" value="Development">
+                                Development
+                            </label>
+                            <label class="option">
+                                <input type="checkbox" value="Finance">
+                                Finance
+                            </label>
+                            <label class="option">
+                                <input type="checkbox" value="Human Resources">
+                                Human Resources
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="second-section">
+        <div class="jobs-container">
+            <h2 class="jobs-found">3 JOBS FOUND</h2>
+            
+            <div class="jobs-list">
+                <!-- Job Item 1 -->
+                <div class="job-item">
+                    <div class="job-info">
+                        <span class="job-department">Finance</span>
+                        <h3 class="job-title">Strategy Analyst</h3>
+                    </div>
+                    <a href="finance.html" class="view-job-btn">VIEW JOB</a>
+                </div>
+    
+                <!-- Job Item 2 -->
+                <div class="job-item">
+                    <div class="job-info">
+                        <span class="job-department">Development</span>
+                        <h3 class="job-title">Manager, Restaurant Design & Customer Experience</h3>
+                    </div>
+                    <a href="developer.html" class="view-job-btn">VIEW JOB</a>
+                </div>
+    
+                <!-- Job Item 3 -->
+                <div class="job-item">
+                    <div class="job-info">
+                        <span class="job-department">Human Resources</span>
+                        <h3 class="job-title">Manager, Team Member Experience</h3>
+                    </div>
+                    <a href="HR.html" class="view-job-btn">VIEW JOB</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">WHO WE ARE</a></li>
+                    <li><a href="working-here.html">WORKING HERE</a></li>
+                    <li><a href="#">JOB SEARCH</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/company/kfc/" target="_blank" class="social-icon">
+                    <img src="resource/working here img/linkedin-icon.png" alt="LinkedIn">
+                </a>
+                <a href="https://jobs.yum.com/brands#/" target="_blank" class="social-icon">
+                    <img src="resource/working here img/yum-icon.png" alt="Yum!">
+                </a>
+                <a href="https://global.kfc.com/" target="_blank" class="social-icon">
+                    <img src="resource/working here img/kfc-icon.png" alt="KFC">
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="resource/working here img/kfc-icon.png" alt="KFC Careers">
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/footer-pages/privacy-policy" target="_blank" alt="privacy-policy">Privacy Policy</a>
+                    <a href="https://careers.global.kfc.com/site/cookie-policy" alt="cookie-policy">Cookie Policy</a>
+                    <span>KFC ALL RIGHTS RESERVED</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="job-search.js"></script>
+    <script src="navigation.js"></script>
+
+</body>
+</html>

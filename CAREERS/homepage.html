@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC Careers</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <div class="navigation">
+        <nav class="navbar">
+            <div class="nav-con">
+                <div class="navlogo">
+                    <img src="https://careers.global.kfc.com/application/themes/thirty_three/assets/dist/img/kfc_brand_logo.png" alt="KFC logo">
+                    <span>Careers</span>
+                </div>
+                <div class="navlinks-container">
+                <ul class="navlinks">
+                    <li class="active"><a href="homepage.html">Home</a></li>
+                    <li class="a"><a href="whoweare.html">Who we are</a></li>
+                    <li class="b"><a href="working-here.html">Working here</a></li>
+                    <li class="c"><a href="job-search.html">Job search</a></li>
+                </ul>
+                </div>
+                <div class="icon" id="menuIcon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa-solid fa-xmark" id="mark"></i>
+                </div>
+            </div>
+        </nav>
+    
+    
+        <div class="overlay" id="menuOverlay">
+            <a href="#" onclick="toggleMenu()">Home</a>
+            <a href="#" onclick="toggleMenu()">Who we are</a>
+            <a href="#" onclick="toggleMenu()">Working here</a>
+            <a href="#" onclick="toggleMenu()">Job search</a>
+        </div>
+    
+        <script>
+            function toggleMenu() {
+            const overlay = document.getElementById("menuOverlay");
+            const menuIconBars = document.getElementById("menuIcon").children[0]; // Bars icon
+            const menuIconClose = document.getElementById("menuIcon").children[1]; // Close icon
+    
+            // Toggle overlay visibility
+            overlay.classList.toggle("active");
+    
+            // Switch between bar and close icons
+            if (overlay.classList.contains("active")) {
+                menuIconBars.style.display = "none";
+                menuIconClose.style.display = "block";
+            } else {
+                menuIconBars.style.display = "block";
+                menuIconClose.style.display = "none";
+            }
+        }  
+        </script>
+    </div>
+    </div>
+    <div class="container">
+        <div class="left-section">
+            <div class="white-rod">
+                <div class="rod"></div>
+                <div class="rod"></div>
+                <div class="rod"></div>
+            </div>
+            <h1>OUR ORIGINAL RECIPE. YOUR ORIGINALITY.</h1>
+            <p>
+                Bring it. Whether it’s innovating with technology, managing operations, 
+                or marketing our finger lickin’ good chicken – we’re looking for people 
+                to bring their spice to KFC Global.
+            </p>
+            <p>Hungry? We’ll feed your potential.</p>
+        </div>
+        <div class="search-bar-wrapper">
+        <div class="search-bar">
+            <div class="search-item">
+                <label for="job-role">JOB ROLE</label>
+                <input type="text" id="job-role" placeholder="Keywords">
+            </div>
+            <div class="search-item">
+                <label for="team">TEAM</label>
+                <select id="team">
+                    <option value="">Select teams</option>
+                    <option value="team1">Team 1</option>
+                    <option value="team2">Team 2</option>
+                </select>
+            </div>
+            <a href="job-search.html" class="search-button">SEARCH JOBS</a>
+        </div>
+        </div>
+        <div class="right-section"></div>
+    </div>
+    
+    <div class="container2">
+        <div class="red-rod">
+            <div class="rrod"></div>
+            <div class="rrod"></div>
+            <div class="rrod"></div>
+        </div>
+        <div class="container2-2">
+            <div class="left-section2">
+                <h1>
+                    <span class="subtitle">WHO WE ARE</span><br>
+                    FINGER LICKIN'<br>
+                    GOOD SINCE 1952.
+                </h1>
+                <p>
+                    We’ve been bringing finger lickin’ good chicken to the world for eight decades. 
+                    At the center of our 29,000+ restaurant system is the KFC Global Team, 
+                    made up of individuals from many corners of the world and serving as our global 
+                    Restaurant Support Center (RSC). Here, we support our regional in-market teams, 
+                    franchise business partners, and nearly one million team members who serve up 
+                    our delicious fried chicken around the world.
+                </p>
+                <a href="whoweare.html" class="learn-more-button">LEARN MORE</a>
+            </div>
+            <div class="right-section2">
+                <div class="image-container">
+                    <img src="https://d1905rzuxsrnqw.cloudfront.net/eyJidWNrZXQiOiIzMy1jZG4taW1hZ2UtaGFuZGxlciIsImtleSI6InByb2R1Y3Rpb25cL2tmY2NjYXJlMjMwMVwvYXBwbGljYXRpb25cL2ZpbGVzXC82NDE2XC85OTU0XC80MDEzXC8xYnkxXzEwMDB4MTAwMF9idWNrZXRfd2l0aF9jaGlja2VuX3dpbmdzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NzY4LCJoZWlnaHQiOjc2OH19fQ==?_v=1699544014" alt="Chicken">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="rred-rod">
+            <div class="rrrod"></div>
+            <div class="rrrod"></div>
+            <div class="rrrod"></div>
+        </div>
+        <div class="container33">
+            <div class="wwhite-rod">
+                <div class="wrod"></div>
+                <div class="wrod"></div>
+                <div class="wrod"></div>
+            </div>
+            <div class="right-section3">
+            <h1>
+                <span class="subtitle2">Our teams</span><br>Meet Team KFC.<br>
+            </h1>
+            <p>
+                We're all about feeding people's potential. And we do it best when we bring Originals together. It's each person's skills, experience, ideas and originality that makes us, us. And it's our family of smart, authentic and courageous people who make it possible to bring finger lickin' good chicken to the world. Discover the teams behind KFC.
+            </p>
+            </div>
+            <a href="job-search.html" class="search-job-button">SEARCH JOB</a>
+        </div>
+    </div>
+    <div class="container4">
+        <h1>
+            <span class="subtitle">WORKING HERE</span><br>
+                ORIGINAL PEOPLE.<br>
+                ORIGINAL CARRERS.
+            </h1>
+            <p>
+                When it comes to what it’s like to work here, our people know best. So we<br> asked them and this is what they have to say (spoiler alert, it’s pretty</br> great here).
+            </p>
+            <a href="whoweare.html" class="learn-more-button2">LEARN MORE</a>
+    </div>
+    <div class="container5">
+        <div class="quote-section">
+            <blockquote class="quote">
+                <span class="quote-symbol">“</span>
+                <p class="quote-under-symbol">
+                    Every day is different. We’re<br> empowered to make decisions<br> and drive change knowing that<br> our work makes an impact on<br> KFC.
+                </p>
+                    <div class="under-quote">
+                        <h3>GLOBAL CATEGORY LEADER</h3>
+                            <h4>Non-poultry Food & Beverages</h4>
+                    </div>
+                    <div class="navigation">
+                        <button class="nav-arrow">←</button>
+                            <span class="page-indicator">1 2 3</span>
+                        <button class="nav-arrow">→</button>
+                    </div>
+            </blockquote>
+        </div>
+        <div class="container5-picture">
+                <img src="https://d1905rzuxsrnqw.cloudfront.net/eyJidWNrZXQiOiIzMy1jZG4taW1hZ2UtaGFuZGxlciIsImtleSI6InByb2R1Y3Rpb25cL2tmY2NjYXJlMjMwMVwvYXBwbGljYXRpb25cL2ZpbGVzXC8yNTE2XC85OTU0XC80MDMzXC8zYnkyXzEwMDB4NjY2N193b21hbl9hbmRfbWFuX3NtaWxpbmdfYnJpZ2h0X29yYW5nZV9iYWNrZ3JvdW5kX2xpZ2h0LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NzEwLCJoZWlnaHQiOjQzN319fQ==?_v=1699544033" alt="pic1" >
+        </div>
+    </div>
+    <div class="container6">
+        <img src="https://d1905rzuxsrnqw.cloudfront.net/eyJidWNrZXQiOiIzMy1jZG4taW1hZ2UtaGFuZGxlciIsImtleSI6InByb2R1Y3Rpb25cL2tmY2NjYXJlMjMwMVwvYXBwbGljYXRpb25cL2ZpbGVzXC82NDE3XC8wMDczXC8zODA3XC9SU0NfTG9jYXRpb24uanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3NjgsImhlaWdodCI6NzY4fX19?_v=1700733807" alt="">
+        <div class="container6-text">
+            <h2>OUR LOCATION</h2>
+            <h1>FRIED CHICKEN HQ.</h1>
+            <p>Based in Dallas, Texas, our headquater is home to our KFC <br> Global division. As a Subsidiary of Yum! Brands(NYSE:YUM),<br>we also share a campus with the Pizaa Hut Global headquaters <br>and the Yum! Corporate team. There are endless possibilities<br> and connections to make.</p>
+        </div>
+    </div>
+    <div class="container7">
+        <div class="red-rod7">
+            <div class="rod7"></div>
+            <div class="rod7"></div>
+            <div class="rod7"></div>
+        </div>
+        <main class="main-content">
+            <h1>SEARCH FOR JOBS</h1>
+            <form class="job-search">
+              <div class="form-group">
+                <label for="job-role">JOB ROLE</label>
+                <input type="text" id="job-role" placeholder="Keywords">
+              </div>
+              <div class="form-group">
+                <label class="form-group-team">TEAM</label>
+                <select class="select-team">
+                  <option>Select teams</option>
+                </select>
+              </div>
+              <a href="job-search.html" class="btn">SEARCH JOBS</a>
+            </form>
+          </main>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="homepage.html">HOME</a></li>
+                    <li><a href="whoweare.html">WHO WE ARE</a></li>
+                    <li><a href="working-here.html" target="_blank">WORKING HERE</a></li>
+                    <li><a href="job-search.html">JOB SEARCH</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/company/kfc/" target="_blank" class="social-icon">
+                    <img src="https://33-cdn-image-handler.s3.eu-west-2.amazonaws.com/production/kfcccare2301/application/files/1617/0013/6993/linkedin_logo.svg" alt="LinkedIn">
+                </a>
+                <a href="https://jobs.yum.com/brands#/" target="_blank" class="social-icon">
+                    <img src="https://33-cdn-image-handler.s3.eu-west-2.amazonaws.com/production/kfcccare2301/application/files/9717/0013/6377/yum_logo.svg" alt="Yum!" >
+                </a>
+                <a href="https://global.kfc.com/" target="_blank" class="social-icon">
+                    <img src="https://33-cdn-image-handler.s3.eu-west-2.amazonaws.com/production/kfcccare2301/application/files/2517/0013/4232/kfc_brand_logo.png" alt="KFC">
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="https://careers.global.kfc.com/application/themes/thirty_three/assets/dist/img/kfc_brand_logo.png" alt="KFC Careers">
+                    <span>Careers</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/footer-pages/privacy-policy" target="_blank" alt="privacy-policy">Privacy Policy</a>
+                    <a href="https://careers.global.kfc.com/site/cookie-policy" alt="cookie-policy">Cookie Policy</a>
+                    <span>KFC ALL RIGHTS RESERVED</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
