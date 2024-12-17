@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC - Our Ambitions | KFC</title>
+    <link rel="stylesheet" href="card3.css">
+    <link rel="stylesheet" href="card4.css">
+    <link rel="stylesheet" href="card1.css">
+    <link href='https://fonts.googleapis.com/css?family=Anton SC' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/3fb3c3bd87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation -->
+    <div class="navigation-con">
+        <div class="navigation">
+            <!-- Logo -->
+            <a href="/">
+                <img src="logo.png" alt="KFC" class="logo">
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="name-nav">
+                <a href="#">COMPANY</a>
+                <a href="#">BRAND IMPACT</a>
+                <a href="#">CAREERS</a>
+                <a href="http://127.0.0.1:5501/Copy/indexCopy.html">NEWSROOM</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-con">
+                <form>
+                    <input type="text">
+                </form>
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+            <!-- bars Icon -->
+            <div class="icon" id="menuIcon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="mark"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Full-Screen Menu Overlay -->
+    <div class="overlay" id="menuOverlay">
+        <a href="#" onclick="toggleMenu()">COMPANY</a>
+        <a href="#" onclick="toggleMenu()">BRAND IMPACT</a>
+        <a href="#" onclick="toggleMenu()">CAREERS</a>
+        <a href="#" onclick="toggleMenu()">NEWSROOM</a>
+        <a href="#" onclick="toggleMenu()">SEARCH</a>
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            // Get elements
+            const overlay = document.getElementById("menuOverlay");
+            const menuIconBars = document.getElementById("menuIcon").children[0]; // Bars icon
+            const menuIconClose = document.getElementById("menuIcon").children[1]; // Close icon
+            const navigationCon = document.querySelector(".navigation-con");
+    
+            // Toggle the overlay's visibility
+            overlay.classList.toggle("active");
+    
+            // Change the icon between bars and close (x)
+            if (overlay.classList.contains("active")) {
+                menuIconBars.style.display = "none"; // Hide bars
+                menuIconClose.style.display = "block"; // Show close icon
+                navigationCon.style.backgroundColor = "pink"; // Change navigation background to pink
+            } else {
+                menuIconBars.style.display = "block"; // Show bars
+                menuIconClose.style.display = "none"; // Hide close icon
+                navigationCon.style.backgroundColor = "white"; // Reset navigation background to white
+            }
+        }
+    
+    </script>
+<div class="body-container">
+<main>
+        <section class="top">
+            <div class="red-rod">
+                <div class="rod"></div>
+                <div class="rod"></div>
+                <div class="rod"></div>
+            </div>
+            <h1>KFC® Unveils 2024 Holiday Bucket and Streetwear-Inspired Merch Collection, Plus Festive Feast DealsKFC® U.s. Names Catherine Tan-Gillespie Chief Marketing Officer & Chief Development Officer</h1>
+        </section>
+
+        <div class="main-left-right">
+            <div class="leftbar">
+                    <div class="date">December 10, 2024</div>
+                    <em>Take your pick of feasts featuring KFC's new Original Recipe® Tenders – with options for any gathering</em>
+                    <p>LOUISVILLE, Ky., Dec. 3, 2024 /PRNewswire/ -- KFC is serving joy at the table this holiday season! Since the 1960s, KFC restaurants around the world have created unique, holiday-themed buckets to celebrate the season. This year, the fried chicken chain is releasing its most colorful and whimsical holiday bucket yet, featuring a "Buckets of Joy" design bya
+                        <a href="#"> Yeye Weller</a>, the popular illustrator duo, plus matching streetwear-inspired holiday merch.
+                    </p>
+                    <div class="img-one">
+                        <img src="https://cdn.sanity.io/images/kbqq3e0r/production/47b731d4e4fd1f15b0024eec3feb0960c3702f89-800x445.jpg?w=3840&q=100" alt="">
+                    </div>
+                    <div class="figcaption">KFC is serving up joy by the bucketful this holiday season! The famous fried-chicken chain is introducing its new Festive Feast Deal featuring the 2024 holiday bucket, designed by the popular illustrator duo, Yeye Weller. Customers can get six pieces of fried chicken, six of KFC’s new Original Recipe® Tenders plus three sauces and two large homestyle sides of choice for just $25.99.</div>
+                    <p>Fried chicken fans can usher in the season in finger lickin' good style, with the new <a href="#">Festive Feast Deal</a> featuring the 2024 holiday bucket, designed by the popular illustrator duo, Yeye Weller. Customers can get six pieces of fried chicken, six of KFC’s new Original Recipe® Tenders plus three sauces and two large homestyle sides of choice for just $25.99. <a href="#"> 2024 KFC Holiday Collection</a> featuring limited-edition designs designed by Yeye Weller to match this year's bucket. The streetwear-inspired collection includes sweatshirts, T-shirts, a festive sweater, a hoodie, a beanie, socks and more, with options at various price points. Starting today, customers can shop the cozy and stylish Holiday Collection at KFCShop.com. </p>
+                    <div class="img-one">
+                        <img src="https://cdn.sanity.io/images/kbqq3e0r/production/3e986133690965ae2144e15e80554289062fe2b0-800x445.jpg?w=3840&q=100" alt="">
+                    </div>
+                    <div class="figcaption">Starting today, fans can celebrate the holidays in KFC-style with a KFC limited-edition new streetwear-inspired merch designed by colorful illustrator duo, Yeye Weller. Whether you’re looking to refresh your holiday wardrobe or find the perfect gift, KFC’s Holiday Collection has it all—featuring t-shirts, sweaters, hoodies, beanies, socks, and more festive items, available now at KFCShop.com.</div>
+                    <p>Yeye Weller are known for their bright, playful and humor-filled artwork that is often focused on creating happiness and spreading positivity, which they've done for some of the world's most iconic brands.</p>
+                    <p>"KFC's Original Recipe has brought people together for generations, especially around the holidays. This season, get more bang for your bucket with the KFC Festive Feast for just $25.99," said Catherine Tan-Gillespie, Chief Marketing Officer and Chief Development Officer, KFC U.S. "Whether you're gathering with friends, family, neighbors or coworkers, exchanging gifts or just breaking biscuits, KFC has your meal, gifts and wardrobe covered."</p>
+                    <p>Customers can order Festive Feasts in restaurants, on KFC.com or on <a href="#">the KFC app. </a>Order online for delivery or Quick Pick-Up***, skipping the line and grabbing your order on KFC's dedicated Quick Pick-Up shelf. For great deals from KFC, sign up for the new KFC Rewards loyalty program to earn rewards on digital orders and start to unlock rewards.****</p>
+                    <p>To make gift-giving easier this holiday season, KFC has new digital gift cards, available to use in-store, on KFC.com, or on the KFC app. Perfect for Secret Santa or any occasion, these gift cards are the ideal gift for the foodie in your life. KFC gift cards can also be found at KFC restaurants and 40,000 retail stores across the country.</p>
+                    <p>*Prices and participation may vary. Prices higher in AK, HI, CA and third-party ordering websites. Tax, tip and fees extra. Offer includes 6 pc tenders, 6pc dark meat chicken on the bone, 2 large sides and 3 sauces.</p>
+                    <p>**Prices and participation may vary.</p>
+                    <p>***Prices, participation, and items may vary. Online ordering available at participating locations only. Lobby hours vary.</p>
+                    <p>****KFC Rewards program only available with online orders at participating KFC restaurants within the 50 U.S. states. Account creation required.</p>
+                    <strong>About KFC</strong>
+                    <p>KFC Corporation, based in Louisville, Ky., has been serving up Finger Lickin' Good Original Recipe® fried chicken since 1952, including chicken on the bone, nuggets and tenders. Beyond the top secret 11 herbs & spices, KFC specialties include the KFC Chicken Sandwich, Extra Crispy™ chicken, KFC Famous Bowls®, Pot Pies, Secret Recipe Fries, biscuits and homestyle sides. There are over 30,000 KFC restaurants in nearly 150 countries and territories around the world. KFC Corporation is a subsidiary of Yum! Brands, Inc., Louisville, Ky. (NYSE: <a href="#">YUM</a>). For more information, visit <a href="#">www.kfc.com.</a>Follow KFC on
+                    <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a> and <a href="#">TikTok</a>
+                    <div class="underline">Media Contact:</div>
+                    <p>Lauren Leger</p>
+                    <a href="#">lauren.leger@yum.com</a>
+                    <p>502-874-8100</p>
+                    <p></p>
+                    <p>SOURCE Kentucky Fried Chicken</p>
+            </div>
+
+            <div class="sidebar">
+                <h3>TOP RELEASES</h3>
+                <div class="list">
+                        <ul>
+                            <a href="#">KFC® Unveils 2024 Holiday Bucket and Streetwear-Inspired Merch Collection, Plus Festive Feast Deals</a>
+                            <p>November 06, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC Punta Arenas: The End of the World’s Bucket is Here!</a>
+                            <p>October 17, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC Issues Battle Cry to Tenders Rivals - Introducing NEW Original Recipe® Tenders and Zesty Comeback Sauce from the Original Fried Chicken Brand</a>
+                            <p>October 14, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC® U.s. Names Catherine Tan-Gillespie Chief Marketing Officer & Chief Development Officer</a>
+                            <p>August 29, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC Strengthens Ongoing Support of Youth Employability</a>
+                            <p>August 12, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC Thailand Pops Up to Celebrate 40 years of Joy with “KENTUCKY TOWN BANGKOK”</a>
+                            <p>June 14, 2024</p>
+                        </ul>
+                </div>
+            </div>
+        </div>
+</main>
+</div>
+<div class="body-container">
+    <!-- footer -->
+    <footer>
+        <div class="red-rod">
+            <div class="rod"></div>
+            <div class="rod"></div>
+            <div class="rod"></div>
+        </div>
+        <div class="container-footer">
+            <div class="container-footer-item">
+                <div class="itemf">
+                    <div class="title-footer">Campany</div>
+                    <ul class="list">
+                        <a href="#"><li>Our Ambitions</li></a>
+                        <a href="#"><li>Our Leadership</li></a>
+                        <a href="#"><li>Our History</li></a>
+                        <a href="#"><li>Where We Dish It Up</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Brand Impact</div>
+                    <ul class="list">
+                        <a href="#"><li>People & Communities</li></a>
+                        <a href="#"><li>Chicken & Nutrition</li></a>
+                        <a href="#"><li>Suppliers & Climate</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Careers</div>
+                    <ul class="list">
+                        <a href="#"><li>Who We Are</li></a>
+                        <a href="#"><li>Working Here</li></a>
+                        <a href="#"><li>Job Search</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Newsroom</div>
+                    <ul class="list">
+                        <a href="#"><li>Press Releases</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Media Contacts</li></a>
+                        <a href="#"><li>Media Assets</li></a>
+                    </ul class="list">
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <a href="#">
+                <div class="circle">
+                    <h1>in</h1>
+                </div>
+            </a>
+        </div>
+        <div class="policy">
+            <p>Copyright &copy; 2024 Company Ltd. All rights reserved. <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/footer-pages/privacy-policy">Privacy Policy</a>  |  <a href="term_use/term_use.html">Terms of Use</a>  |  <a href="sitemap/sitemap.html">Sitemap</a></p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+

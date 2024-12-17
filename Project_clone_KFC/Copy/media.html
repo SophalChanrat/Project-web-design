@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC - Our Ambitions | KFC</title>
+    <link rel="stylesheet" href="media.css">
+    <link href='https://fonts.googleapis.com/css?family=Anton SC' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/3fb3c3bd87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="body-container">
+    <!-- navigation -->
+    <div class="navigation-con">
+        <div class="navigation">
+            <!-- Logo -->
+            <a href="/">
+                <img src="logo.png" alt="KFC" class="logo">
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="name-nav">
+                <a href="#">COMPANY</a>
+                <a href="#">BRAND IMPACT</a>
+                <a href="#">CAREERS</a>
+                <a href="http://127.0.0.1:5502/Copy/indexCopy.html">NEWSROOM</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-con">
+                <form>
+                    <input type="text">
+                </form>
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+            <!-- bars Icon -->
+            <div class="icon" id="menuIcon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="mark"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Full-Screen Menu Overlay -->
+    <div class="overlay" id="menuOverlay">
+        <a href="#" onclick="toggleMenu()">COMPANY</a>
+        <a href="#" onclick="toggleMenu()">BRAND IMPACT</a>
+        <a href="#" onclick="toggleMenu()">CAREERS</a>
+        <a href="#" onclick="toggleMenu()">NEWSROOM</a>
+        <a href="#" onclick="toggleMenu()">SEARCH</a>
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            // Get elements
+            const overlay = document.getElementById("menuOverlay");
+            const menuIconBars = document.getElementById("menuIcon").children[0]; // Bars icon
+            const menuIconClose = document.getElementById("menuIcon").children[1]; // Close icon
+            const navigationCon = document.querySelector(".navigation-con");
+    
+            // Toggle the overlay's visibility
+            overlay.classList.toggle("active");
+    
+            // Change the icon between bars and close (x)
+            if (overlay.classList.contains("active")) {
+                menuIconBars.style.display = "none"; // Hide bars
+                menuIconClose.style.display = "block"; // Show close icon
+                navigationCon.style.backgroundColor = "pink"; // Change navigation background to pink
+            } else {
+                menuIconBars.style.display = "block"; // Show bars
+                menuIconClose.style.display = "none"; // Hide close icon
+                navigationCon.style.backgroundColor = "white"; // Reset navigation background to white
+            }
+        }
+    
+    </script>
+
+    <!-- main -->
+    <main>
+        <section class="media-contacts">
+            <h1>MEDIA CONTACTS</h1>
+            <div class="line-1"></div>
+            <div>
+                <a href="http://127.0.0.1:5502/Copy/indexCopy.html" class="newsroom">Newsroom</a><i class="fa fa-greater-than"></i> 
+                <a href="#" class="media_contact">Media Contact</a> 
+            </div>
+        </section>
+        <div class="main-container">
+            <div class="contact-section">
+                <h2>KFC GLOBAL</h2>
+                <p>
+                    <button type="submit">
+                    <i class="fa-regular fa-envelope"></i>
+                    </button><a href="mailto:kcfinternationalmedia@yum.com">kcfinternationalmedia@yum.com</a>
+                </p>
+                <p>
+                    <button type="submit">
+                        <i class="fa-solid fa-phone fa-flip-horizontal"></i>
+                    </button><a href="tel:+19723386714">(972) 338-6714</a></p>
+            </div>
+            
+            <div class="contact-section">
+                <h2>KFC U.S.</h2>
+                <p> 
+                    <button type="submit">
+                    <i class="fa-regular fa-envelope"></i>
+                    </button><a href="mailto:kfcusmedia@yum.com">kfcusmedia@yum.com</a>
+                </p>
+                <p>
+                    <button type="submit">
+                        <i class="fa-solid fa-phone fa-flip-horizontal"></i>
+                    </button><a href="tel:+15028748100">(502) 874-8100</a></p>
+            </div>
+            
+            <div class="contact-section">
+                <h2>KFC U.K. & IRELAND</h2>
+                <p>
+                    <button type="submit">
+                    <i class="fa-regular fa-envelope"></i>
+                    </button><a href="mailto:kfcpressoffice@freuds.com">kfcpressoffice@freuds.com</a>
+                </p>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+
+    <footer>
+        <div class="red-rod">
+            <div class="rod"></div>
+            <div class="rod"></div>
+            <div class="rod"></div>
+        </div>
+        <div class="container-footer">
+            <div class="container-footer-item">
+                <div class="itemf">
+                    <div class="title-footer">Campany</div>
+                    <ul class="list">
+                        <a href="#"><li>Our Ambitions</li></a>
+                        <a href="#"><li>Our Leadership</li></a>
+                        <a href="#"><li>Our History</li></a>
+                        <a href="#"><li>Where We Dish It Up</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Brand Impact</div>
+                    <ul class="list">
+                        <a href="#"><li>People & Communities</li></a>
+                        <a href="#"><li>Chicken & Nutrition</li></a>
+                        <a href="#"><li>Suppliers & Climate</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Careers</div>
+                    <ul class="list">
+                        <a href="#"><li>Who We Are</li></a>
+                        <a href="#"><li>Working Here</li></a>
+                        <a href="#"><li>Job Search</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Newsroom</div>
+                    <ul class="list">
+                        <a href="#"><li>Press Releases</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Media Contacts</li></a>
+                        <a href="#"><li>Media Assets</li></a>
+                    </ul class="list">
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <a href="#">
+                <div class="circle">
+                    <h1>in</h1>
+                </div>
+            </a>
+        </div>
+        <div class="policy">
+            <p>Copyright &copy; 2024 Company Ltd. All rights reserved. <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/footer-pages/privacy-policy">Privacy Policy</a>  |  <a href="term_use/term_use.html">Terms of Use</a>  |  <a href="sitemap/sitemap.html">Sitemap</a></p>
+        </div>
+    </footer>
+
+    <!-- Single button for small screen -->
+    <a href="#" class="pop_up"></a>
+</div>
+</body>
+</html>

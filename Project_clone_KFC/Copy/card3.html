@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC - Our Ambitions | KFC</title>
+    <link rel="stylesheet" href="card3.css">
+    <link href='https://fonts.googleapis.com/css?family=Anton SC' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/3fb3c3bd87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation -->
+    <div class="navigation-con">
+        <div class="navigation">
+            <!-- Logo -->
+            <a href="/">
+                <img src="logo.png" alt="KFC" class="logo">
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="name-nav">
+                <a href="#">COMPANY</a>
+                <a href="#">BRAND IMPACT</a>
+                <a href="#">CAREERS</a>
+                <a href="http://127.0.0.1:5501/Copy/indexCopy.html">NEWSROOM</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-con">
+                <form>
+                    <input type="text">
+                </form>
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+            <!-- bars Icon -->
+            <div class="icon" id="menuIcon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="mark"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Full-Screen Menu Overlay -->
+    <div class="overlay" id="menuOverlay">
+        <a href="#" onclick="toggleMenu()">COMPANY</a>
+        <a href="#" onclick="toggleMenu()">BRAND IMPACT</a>
+        <a href="#" onclick="toggleMenu()">CAREERS</a>
+        <a href="#" onclick="toggleMenu()">NEWSROOM</a>
+        <a href="#" onclick="toggleMenu()">SEARCH</a>
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            // Get elements
+            const overlay = document.getElementById("menuOverlay");
+            const menuIconBars = document.getElementById("menuIcon").children[0]; // Bars icon
+            const menuIconClose = document.getElementById("menuIcon").children[1]; // Close icon
+            const navigationCon = document.querySelector(".navigation-con");
+    
+            // Toggle the overlay's visibility
+            overlay.classList.toggle("active");
+    
+            // Change the icon between bars and close (x)
+            if (overlay.classList.contains("active")) {
+                menuIconBars.style.display = "none"; // Hide bars
+                menuIconClose.style.display = "block"; // Show close icon
+                navigationCon.style.backgroundColor = "pink"; // Change navigation background to pink
+            } else {
+                menuIconBars.style.display = "block"; // Show bars
+                menuIconClose.style.display = "none"; // Hide close icon
+                navigationCon.style.backgroundColor = "white"; // Reset navigation background to white
+            }
+        }
+    
+    </script>
+<div class="body-container">
+<main>
+        <section class="top">
+            <div class="red-rod">
+                <div class="rod"></div>
+                <div class="rod"></div>
+                <div class="rod"></div>
+            </div>
+            <h1>KFC PUNTA ARENAS:THE END OF THE WORLD’S BUCKET IS HERE!</h1>
+        </section>
+
+        <div class="main-left-right">
+            <div class="leftbar">
+                    <div class="date">October 17, 2024</div>
+                    <P>We are thrilled to share a monumental achievement for KFC LA&C—the grand opening of <strong>KFC Punta Arenas</strong>, located in the breathtaking region of Chilean Patagonia! Tucked away in the southernmost part of the globe, Punta Arenas is known for its stunning landscapes, rich history, and <strong>crazy cold weather!</strong> </P>
+                    <p>As the temperatures dip to bone-chilling lows, our finger-lickin’ good chicken is ready to bring some warmth to this unique corner of the world by celebrating the opening with a very special <strong>“End of the World Bucket”!</strong>Ready for more…?</p>
+                    <p>
+                        In celebration of <strong>International Day of Sign Languages</strong>, KFC is taking a monumental step in the hospitality industry, as it becomes the <strong>first QSR in India</strong> to launch a <strong>Sign Language training program</strong> for <strong>100% of its employees</strong>. The first-of-its-kind training is required to be undertaken by all <strong>17,000+ KFC employees</strong>, who are spread across <strong>240+ cities</strong> in <strong>1200+ restaurants</strong>, as well as those working in the brand’s corporate offices.
+                    </p>
+                    <div class="video-container">
+                        <video controls>
+                            <source src="video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p>​Punta Arenas is now home to a new KFC, serving up that signature ‘krunchiness’ we all know and love! Located inside the “Mall Espacio Urbano Pionero,” we are ready to deliver our irresistible flavors and create an unforgettable experience for our guests, even in the coldest of weathers!
+                    </p>
+                    <div class="flex-img">
+                        <img src="https://cdn.sanity.io/images/kbqq3e0r/production/63ddb0efd731a984d2bfd5abd8b2c442a019b314-1240x960.jpg?w=3840&q=100" alt="">
+                        <img src="https://cdn.sanity.io/images/kbqq3e0r/production/2b3d8a4cae19215d39a53f566170377e8f80c309-1240x960.jpg?w=3840&q=100" alt="">
+                    </div>
+                    <p>A huge shoutout to our franchisee, <strong>Grupo Serrano,</strong> and the LA&C team for this incredible accomplishment! Your dedication and hard work have brought KFC to the end of the world, and we couldn't be prouder.</p>
+                    <p>Let’s continue spreading ‘krunchiness’ across the globe… One bucket at a time!</p>
+            </div>
+
+            <div class="sidebar">
+                <h3>TOP RELEASES</h3>
+                <div class="list">
+                        <ul>
+                            <a href="#">KFC® Unveils 2024 Holiday Bucket and Streetwear-Inspired Merch Collection, Plus Festive Feast Deals</a>
+                            <p>November 06, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC Punta Arenas: The End of the World’s Bucket is Here!</a>
+                            <p>October 17, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC Issues Battle Cry to Tenders Rivals - Introducing NEW Original Recipe® Tenders and Zesty Comeback Sauce from the Original Fried Chicken Brand</a>
+                            <p>October 14, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC® U.s. Names Catherine Tan-Gillespie Chief Marketing Officer & Chief Development Officer</a>
+                            <p>August 29, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC Strengthens Ongoing Support of Youth Employability</a>
+                            <p>August 12, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC Thailand Pops Up to Celebrate 40 years of Joy with “KENTUCKY TOWN BANGKOK”</a>
+                            <p>June 14, 2024</p>
+                        </ul>
+                </div>
+            </div>
+        </div>
+</main>
+</div>
+<div class="body-container">
+    <!-- footer -->
+    <footer>
+        <div class="red-rod">
+            <div class="rod"></div>
+            <div class="rod"></div>
+            <div class="rod"></div>
+        </div>
+        <div class="container-footer">
+            <div class="container-footer-item">
+                <div class="itemf">
+                    <div class="title-footer">Campany</div>
+                    <ul class="list">
+                        <a href="#"><li>Our Ambitions</li></a>
+                        <a href="#"><li>Our Leadership</li></a>
+                        <a href="#"><li>Our History</li></a>
+                        <a href="#"><li>Where We Dish It Up</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Brand Impact</div>
+                    <ul class="list">
+                        <a href="#"><li>People & Communities</li></a>
+                        <a href="#"><li>Chicken & Nutrition</li></a>
+                        <a href="#"><li>Suppliers & Climate</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Careers</div>
+                    <ul class="list">
+                        <a href="#"><li>Who We Are</li></a>
+                        <a href="#"><li>Working Here</li></a>
+                        <a href="#"><li>Job Search</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Newsroom</div>
+                    <ul class="list">
+                        <a href="#"><li>Press Releases</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Media Contacts</li></a>
+                        <a href="#"><li>Media Assets</li></a>
+                    </ul class="list">
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <a href="#">
+                <div class="circle">
+                    <h1>in</h1>
+                </div>
+            </a>
+        </div>
+        <div class="policy">
+            <p>Copyright &copy; 2024 Company Ltd. All rights reserved. <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/footer-pages/privacy-policy">Privacy Policy</a>  |  <a href="term_use/term_use.html">Terms of Use</a>  |  <a href="sitemap/sitemap.html">Sitemap</a></p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+

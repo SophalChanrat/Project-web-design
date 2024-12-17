@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC - Our Ambitions | KFC</title>
+    <link rel="stylesheet" href="card8.css">
+    <link href='https://fonts.googleapis.com/css?family=Anton SC' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/3fb3c3bd87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation -->
+    <div class="navigation-con">
+        <div class="navigation">
+            <!-- Logo -->
+            <a href="/">
+                <img src="logo.png" alt="KFC" class="logo">
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="name-nav">
+                <a href="#">COMPANY</a>
+                <a href="#">BRAND IMPACT</a>
+                <a href="#">CAREERS</a>
+                <a href="http://127.0.0.1:5501/Copy/indexCopy.html">NEWSROOM</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-con">
+                <form>
+                    <input type="text">
+                </form>
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+            <!-- bars Icon -->
+            <div class="icon" id="menuIcon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="mark"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Full-Screen Menu Overlay -->
+    <div class="overlay" id="menuOverlay">
+        <a href="#" onclick="toggleMenu()">COMPANY</a>
+        <a href="#" onclick="toggleMenu()">BRAND IMPACT</a>
+        <a href="#" onclick="toggleMenu()">CAREERS</a>
+        <a href="#" onclick="toggleMenu()">NEWSROOM</a>
+        <a href="#" onclick="toggleMenu()">SEARCH</a>
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            // Get elements
+            const overlay = document.getElementById("menuOverlay");
+            const menuIconBars = document.getElementById("menuIcon").children[0]; // Bars icon
+            const menuIconClose = document.getElementById("menuIcon").children[1]; // Close icon
+            const navigationCon = document.querySelector(".navigation-con");
+    
+            // Toggle the overlay's visibility
+            overlay.classList.toggle("active");
+    
+            // Change the icon between bars and close (x)
+            if (overlay.classList.contains("active")) {
+                menuIconBars.style.display = "none"; // Hide bars
+                menuIconClose.style.display = "block"; // Show close icon
+                navigationCon.style.backgroundColor = "pink"; // Change navigation background to pink
+            } else {
+                menuIconBars.style.display = "block"; // Show bars
+                menuIconClose.style.display = "none"; // Hide close icon
+                navigationCon.style.backgroundColor = "white"; // Reset navigation background to white
+            }
+        }
+    
+    </script>
+
+<div class="body-container">
+<main>
+    <div class="main-left-right">
+        <section class="top">
+            <div class="red-rod">
+                <div class="rod"></div>
+                <div class="rod"></div>
+                <div class="rod"></div>
+            </div>
+        </section>
+        <section class="media-contacts">
+            <h1>BLOG</h1>
+            <div class="line-1"></div>
+        </section>
+        <div class="media-contacts">
+            <a href="http://127.0.0.1:5502/Copy/indexCopy.html" class="newsroom">Newsroom <span class="separator">></span></a>
+            <span class="media_contact">QSR Evolution Conference 2024: Takeaways For Evolving Quick Service For The Future</span>
+        </div>
+        <div class="title">
+            <h1>QSR Evolution Conference 2024: Takeaways For Evolving Quick Service For The Future</h1>
+        </div>
+        
+        <div class="leftbar">
+            <div class="date">September 18, 2023</div>
+            <p>Here’s our key takeaways from this year’s event:</p>
+            <ul>
+                <li><strong>Prioritize spending time in restaurant</strong></li>
+                <li>– Multiple QSR leaders spoke about the important role time spent in their restaurants plays. These visits help those with roles outside the restaurant stay grounded in the day-to-day realities of the business. They also shed light on what team members and guests are experiencing, which in turn helps inform strategic decisions that drive the broader business.</li>
+                <li><strong>Consistent execution and hospitality remain king</strong></li>
+                <li>– While we’re in the business of serving delicious food, our guests must remain at the center of every decision we make. It’s essential that we deliver on the key reasons people choose to spend their time and money with our brands. To ensure a consistent, hospitality-driven experience is enjoyed by every guest, it’s important we select strong operators who are guest-centric and motivated to develop their teams.</li>
+                <li><strong>Innovation can transform legacy brands</strong></li>
+                <li>– Some brands like KFC have decades of experience serving guests, building loyalty and evolving the business. But to remain relevant for the decades to come, innovation is key. And this magic happens at the intersection of staying true to what defines you as a brand while also adopting new technology and tapping into modern cultural trends.</li>
+                <li><strong>Connect with the community</strong></li>
+                <li>– Nearly every brand who participated at the conference shared their connection to the communities they serve. Through responsible hiring practices, team member development, volunteer opportunities and give-back programs, it's clear QSRs are making a real impact on their neighborhoods and the people in them.</li>
+            </ul>
+            <p>QSR Magazine has already confirmed the conference will return in September 2024. Stay tuned for topic and speaker information:<a href="#">https://www.qsrevolutionconference.com/about/</a></p>
+        </div>
+    </div>
+    <a href="" class="button">
+        <button> Return to Newsroom</button>
+    </a>
+</main>
+</div>
+
+
+    <!-- footer -->
+<div class="body-container">
+    <footer>
+        <div class="red-rod">
+            <div class="rod"></div>
+            <div class="rod"></div>
+            <div class="rod"></div>
+        </div>
+        <div class="container-footer">
+            <div class="container-footer-item">
+                <div class="itemf">
+                    <div class="title-footer">Campany</div>
+                    <ul class="list">
+                        <a href="#"><li>Our Ambitions</li></a>
+                        <a href="#"><li>Our Leadership</li></a>
+                        <a href="#"><li>Our History</li></a>
+                        <a href="#"><li>Where We Dish It Up</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Brand Impact</div>
+                    <ul class="list">
+                        <a href="#"><li>People & Communities</li></a>
+                        <a href="#"><li>Chicken & Nutrition</li></a>
+                        <a href="#"><li>Suppliers & Climate</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Careers</div>
+                    <ul class="list">
+                        <a href="#"><li>Who We Are</li></a>
+                        <a href="#"><li>Working Here</li></a>
+                        <a href="#"><li>Job Search</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Newsroom</div>
+                    <ul class="list">
+                        <a href="#"><li>Press Releases</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Media Contacts</li></a>
+                        <a href="#"><li>Media Assets</li></a>
+                    </ul class="list">
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <a href="#">
+                <div class="circle">
+                    <h1>in</h1>
+                </div>
+            </a>
+        </div>
+        <div class="policy">
+            <p>Copyright &copy; 2024 Company Ltd. All rights reserved. <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/footer-pages/privacy-policy">Privacy Policy</a>  |  <a href="term_use/term_use.html">Terms of Use</a>  |  <a href="sitemap/sitemap.html">Sitemap</a></p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+

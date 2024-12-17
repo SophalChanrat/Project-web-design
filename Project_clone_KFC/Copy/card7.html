@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC - Our Ambitions | KFC</title>
+    <link rel="stylesheet" href="card7.css">
+    <link href='https://fonts.googleapis.com/css?family=Anton SC' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/3fb3c3bd87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation -->
+    <div class="navigation-con">
+        <div class="navigation">
+            <!-- Logo -->
+            <a href="/">
+                <img src="logo.png" alt="KFC" class="logo">
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="name-nav">
+                <a href="#">COMPANY</a>
+                <a href="#">BRAND IMPACT</a>
+                <a href="#">CAREERS</a>
+                <a href="http://127.0.0.1:5501/Copy/indexCopy.html">NEWSROOM</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-con">
+                <form>
+                    <input type="text">
+                </form>
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+            <!-- bars Icon -->
+            <div class="icon" id="menuIcon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="mark"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Full-Screen Menu Overlay -->
+    <div class="overlay" id="menuOverlay">
+        <a href="#" onclick="toggleMenu()">COMPANY</a>
+        <a href="#" onclick="toggleMenu()">BRAND IMPACT</a>
+        <a href="#" onclick="toggleMenu()">CAREERS</a>
+        <a href="#" onclick="toggleMenu()">NEWSROOM</a>
+        <a href="#" onclick="toggleMenu()">SEARCH</a>
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            // Get elements
+            const overlay = document.getElementById("menuOverlay");
+            const menuIconBars = document.getElementById("menuIcon").children[0]; // Bars icon
+            const menuIconClose = document.getElementById("menuIcon").children[1]; // Close icon
+            const navigationCon = document.querySelector(".navigation-con");
+    
+            // Toggle the overlay's visibility
+            overlay.classList.toggle("active");
+    
+            // Change the icon between bars and close (x)
+            if (overlay.classList.contains("active")) {
+                menuIconBars.style.display = "none"; // Hide bars
+                menuIconClose.style.display = "block"; // Show close icon
+                navigationCon.style.backgroundColor = "pink"; // Change navigation background to pink
+            } else {
+                menuIconBars.style.display = "block"; // Show bars
+                menuIconClose.style.display = "none"; // Hide close icon
+                navigationCon.style.backgroundColor = "white"; // Reset navigation background to white
+            }
+        }
+    
+    </script>
+
+<div class="body-container">
+<main>
+    <div class="main-left-right">
+        <section class="top">
+            <div class="red-rod">
+                <div class="rod"></div>
+                <div class="rod"></div>
+                <div class="rod"></div>
+            </div>
+        </section>
+        <section class="media-contacts">
+            <h1>BLOG</h1>
+            <div class="line-1"></div>
+        </section>
+        <div class="media-contacts">
+            <a href="http://127.0.0.1:5502/Copy/indexCopy.html" class="newsroom">Newsroom <span class="separator">></span></a>
+            <span class="media_contact">QSR Evolution Conference 2024: Takeaways For Evolving Quick Service For The Future</span>
+        </div>
+        <div class="title">
+            <h1>QSR Evolution Conference 2024: Takeaways For Evolving Quick Service For The Future</h1>
+        </div>
+        
+        <div class="leftbar">
+            <div class="date">September 19, 2024</div>
+            <p>Early this month, members of our team attended the second annual QSR Evolution Conference in Atlanta, GA, where Sabir Sami, CEO of KFC Global, delivered a keynote on driving brand DNA at scale.</p>
+            <div class="img-one">
+                <img src="https://cdn.sanity.io/images/kbqq3e0r/production/70053576bffe247b98583a49224a724d0e998844-1858x1242.png?w=3840&q=100" alt="">
+                <div class="figcaption">Global CEO, Sabir Sami, speaks with QSR Magazine Editor, Danny Klein, during a keynote event on Sept. 4, 2024.</div>
+            </div>
+            <p>Hosted by QSR Magazine and NextGen, QSR Evolution gathers leaders from across the industry to share their perspectives on growth, marketing, technology, franchisee partnership, drive-thru innovation, brand culture and more.</p>
+            <p>From our team of KFC attendees, here are some key takeaways from the conference:</p>
+            <ol>
+                <li>When it comes to technology, restaurant brands need to strike a balance between automation and human touch. Technology is evolving at unprecedented rates and transforming restaurant experiences for both customers and team members. When incorporating new technology into restaurants, it’s incredibly important to decipher where automation could strengthen process and create efficiencies versus where human touch is crucial to generating authentic connections and building brand affinity. It is important to leverage both.</li>
+                <li>Menu innovation is getting bolder, more creative. We are in the business of serving delicious food so we may be a bit biased, but KFC’s diverse menus worldwide are some of the most creative. Sabir, among other leaders, highlighted the growth of unique menu items that resonate with and spotlight local cultures while using standard menu ingredients. Among Sabir’s favorites is the Donut Zinger Burger in Thailand. Menu innovation across the quick-service restaurant industry is getting bolder with more unique formats and flavors. It is important for us to continue pushing the envelope to pique customers’ interest and keep them coming back.</li>
+                <li><strong>Prioritizing team members’ needs is a must-do, not a nice-to-do.</strong>We have long said that the guest experience will never exceed the team member experience. That sentiment was loudly echoed by QSR leaders across the industry. Multiple sessions across the two-day conference shared advice and tactical ideas around how to ensure your team members are well-trained, confident in their role and feel supported every time they show up for work. And with rising expectations from guests, team members should feel empowered to act when a guest is disappointed with an experience.</li>
+                <li><strong>Value means much more than just price.</strong>Multiple industry leaders spoke on what it means to bring value to the guest. It is often presumed that consumers associate value with price and affordability. While true, the feeling of value can be much broader, encompassing things like quality and ease of experience. Brands should be mindful of all these factors when aiming to create products that consumers value.</li>
+                <li><strong>Don’t overlook being an active member of the communities you serve.</strong>Consumers, particularly Gen Z, continue to expect that the brands they engage with care about making meaningful and relevant impact in the communities they serve. This has long been a priority for KFC and we are proud to put this into action in our markets around the world.</li>
+            </ol>
+            <div class="img-one">
+                <img src="https://cdn.sanity.io/images/kbqq3e0r/production/db7219101825ea8e42272d764c554e79d28d58bf-1856x1240.png?w=3840&q=100" alt="">
+                <div class="figcaption">Global Director of Operations, Engineering & Innovation, Peter Hong, speaks on a panel about Drive-Thru Innovation.</div>
+            </div>
+            <p>Our team is already looking forward to joining our peers again at QSR Evolution in 2025. For more information about the annual conference, visit <a href="#">https://www.qsrevolutionconference.com/</a>.</p>
+        </div>
+    </div>
+    <a href="" class="button">
+        <button> View More</button>
+    </a>
+</main>
+</div>
+    <!-- footer -->
+<div class="body-container">
+    <footer>
+        <div class="red-rod">
+            <div class="rod"></div>
+            <div class="rod"></div>
+            <div class="rod"></div>
+        </div>
+        <div class="container-footer">
+            <div class="container-footer-item">
+                <div class="itemf">
+                    <div class="title-footer">Campany</div>
+                    <ul class="list">
+                        <a href="#"><li>Our Ambitions</li></a>
+                        <a href="#"><li>Our Leadership</li></a>
+                        <a href="#"><li>Our History</li></a>
+                        <a href="#"><li>Where We Dish It Up</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Brand Impact</div>
+                    <ul class="list">
+                        <a href="#"><li>People & Communities</li></a>
+                        <a href="#"><li>Chicken & Nutrition</li></a>
+                        <a href="#"><li>Suppliers & Climate</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Careers</div>
+                    <ul class="list">
+                        <a href="#"><li>Who We Are</li></a>
+                        <a href="#"><li>Working Here</li></a>
+                        <a href="#"><li>Job Search</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Newsroom</div>
+                    <ul class="list">
+                        <a href="#"><li>Press Releases</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Media Contacts</li></a>
+                        <a href="#"><li>Media Assets</li></a>
+                    </ul class="list">
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <a href="#">
+                <div class="circle">
+                    <h1>in</h1>
+                </div>
+            </a>
+        </div>
+        <div class="policy">
+            <p>Copyright &copy; 2024 Company Ltd. All rights reserved. <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/footer-pages/privacy-policy">Privacy Policy</a>  |  <a href="term_use/term_use.html">Terms of Use</a>  |  <a href="sitemap/sitemap.html">Sitemap</a></p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+

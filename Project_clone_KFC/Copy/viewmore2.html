@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC - Our Ambitions | KFC</title>
+    <link rel="stylesheet" href="viewmore2.css">
+    <link href='https://fonts.googleapis.com/css?family=Anton SC' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/3fb3c3bd87.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation -->
+    <div class="navigation-con">
+        <div class="navigation">
+            <!-- Logo -->
+            <a href="/">
+                <img src="logo.png" alt="KFC" class="logo">
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="name-nav">
+                <a href="#">COMPANY</a>
+                <a href="#">BRAND IMPACT</a>
+                <a href="#">CAREERS</a>
+                <a href="http://127.0.0.1:5502/Copy/indexCopy.html">NEWSROOM</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-con">
+                <form>
+                    <input type="text">
+                </form>
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+            <!-- bars Icon -->
+            <div class="icon" id="menuIcon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="mark"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Full-Screen Menu Overlay -->
+    <div class="overlay" id="menuOverlay">
+        <a href="#" onclick="toggleMenu()">COMPANY</a>
+        <a href="#" onclick="toggleMenu()">BRAND IMPACT</a>
+        <a href="#" onclick="toggleMenu()">CAREERS</a>
+        <a href="#" onclick="toggleMenu()">NEWSROOM</a>
+        <a href="#" onclick="toggleMenu()">SEARCH</a>
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            // Get elements
+            const overlay = document.getElementById("menuOverlay");
+            const menuIconBars = document.getElementById("menuIcon").children[0]; // Bars icon
+            const menuIconClose = document.getElementById("menuIcon").children[1]; // Close icon
+            const navigationCon = document.querySelector(".navigation-con");
+    
+            // Toggle the overlay's visibility
+            overlay.classList.toggle("active");
+    
+            // Change the icon between bars and close (x)
+            if (overlay.classList.contains("active")) {
+                menuIconBars.style.display = "none"; // Hide bars
+                menuIconClose.style.display = "block"; // Show close icon
+                navigationCon.style.backgroundColor = "pink"; // Change navigation background to pink
+            } else {
+                menuIconBars.style.display = "block"; // Show bars
+                menuIconClose.style.display = "none"; // Hide close icon
+                navigationCon.style.backgroundColor = "white"; // Reset navigation background to white
+            }
+        }
+    
+    </script>
+    <!-- main  -->
+    <main>
+        <section class="stories-section">
+            <div class="red-rod">
+                <div class="rod"></div>
+                <div class="rod"></div>
+                <div class="rod"></div>
+            </div>
+            
+            <h1>STORIES</h1>
+            
+            <p class="stories-text">
+                Just like our food and our founder, KFC stories are always original. Click below for stories and 
+                updates on our people, food, social impact and everything else that makes us distinctively KFC.
+            </p>
+        </section>
+            <div class="stories-buttons">
+                <button class="story-btn">
+                    <i class="fas fa-users"></i>
+                    <span class="hidden md:block">Our People</span>
+                    <span class="md:hidden">O</span>
+                </button>
+                <button class="story-btn food">
+                    <i class="fas fa-drumstick-bite"></i>
+                    <span class="hidden md:block">Food</span>
+                    <span class="md:hidden">F</span>
+                </button>
+                <button class="story-btn">
+                    <i class="fas fa-globe"></i>
+                    <span class="hidden md:block">Social Impact</span>
+                    <span class="md:hidden">S</span>
+                </button>
+                <button class="story-btn">
+                    <i class="fas fa-drumstick"></i>
+                    <span class="hidden md:block">Distinctively KFC</span>
+                    <span class="md:hidden">D</span>
+                </button>
+            </div>
+        </section>
+        <section>
+            <div class="container" id="people">
+                <!-- Header Section -->
+                <div class="section-header">
+                    <h3>OUR PEOPLE</h3>
+                    <p>From restaurant employees to our CEO, we celebrate the people that make us KFC.</p>
+                </div>
+            
+                <div class="card-container">
+                    <!-- Card Example (repeated 6 times) -->
+                        <div class="card one">
+                            <img src="https://global.kfc.com/images/logo-placeholder.webp" alt="Image 1">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="https://global.kfc.com/press-releases/kfc-pioneers-qsr-industry-first-sign-language-training-for-all-employees">Collaborating in the kitchen and over coffee...</a>
+                                <div class="date">August 26, 2023</div>
+                            </div>
+                        </div>
+                    <!-- Card 2 -->
+                        <div class="card">
+                            <img src="https://global.kfc.com/images/logo-placeholder.webp" alt="Image 2">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">First Annual People, Culture & Purpose C...</a>
+                                <div class="date">July 21, 2023</div>
+                            </div>
+                        </div>
+                    <!-- Card 3 -->
+                        <div class="card">
+                            <img src="https://global.kfc.com/images/logo-placeholder.webp" alt="Image 3">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">KFC Turkey Provides Meaningful Opportuni...</a>
+                                <div class="date">May 10, 2023</div>
+                            </div>
+                        </div>
+                    <!-- Card 4 -->
+                        <div class="card">
+                            <img src="https://global.kfc.com/images/logo-placeholder.webp" alt="Image 4">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">What equity, inclusion & belonging (EI&B...</a>
+                                <div class="date">April 27, 2023</div>
+                            </div>
+                        </div>
+                    <!-- Card 5 -->
+                        <div class="card">
+                            <img src="https://global.kfc.com/images/logo-placeholder.webp" alt="Image 5">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">KFC's first-ever Black African female GM</a>
+                                <div class="date">March 14, 2023</div>
+                            </div>
+                        </div>
+                    <!-- Card 6 -->
+                        <div class="card">
+                            <img src="https://global.kfc.com/images/logo-placeholder.webp" alt="Image 6">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">Celebrating the journey of Black leaders...</a>
+                                <div class="date">February 09, 2023</div>
+                            </div>
+                        </div>
+                </div>
+                <!-- Load More Button -->
+                <div class="load-more">
+                    <button>Load More</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container" id="people">
+                <!-- Header Section -->
+                <div class="section-header">
+                    <h3>FOOD</h3>
+                    <p>We take pride in our original food. Check out these home recipes and iconic menu items from around the world.</p>
+                </div>
+            
+                <div class="card-container">
+                    <!-- Card Example (repeated 6 times) -->
+                        <div class="card one">
+                            <img src="https://cdn.sanity.io/images/kbqq3e0r/production/6ab8574c079958991f5c9ae3eed6be94954f7069-1280x720.jpg?w=3840&q=100" alt="Image 1">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="https://global.kfc.com/press-releases/kfc-pioneers-qsr-industry-first-sign-language-training-for-all-employees">KFC South Africa brings a lil heat...</a>
+                                <div class="date">June 15, 2021</div>
+                            </div>
+                        </div>
+                    <!-- Card 2 -->
+                        <div class="card">
+                            <img src="https://cdn.sanity.io/images/kbqq3e0r/production/79612f7ea39936f3ee5108f88e21ce8d3cfff14b-850x567.jpg?w=3840&q=100" alt="Image 2">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">Often imitated, never duplicated</a>
+                                <div class="date">April 08, 2021</div>
+                            </div>
+                        </div>
+                    <!-- Card 3 -->
+                        <div class="card">
+                            <img src="https://cdn.sanity.io/images/kbqq3e0r/production/dc33d7d7d8b2f07e9b2138ac9db42ccd333f79a2-556x603.jpg?w=3840&q=100" alt="Image 3">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">Italy Harvest Food Donation 101 with Ang...</a>
+                                <div class="date">January 22, 2021</div>
+                            </div>
+                        </div>
+                    <!-- Card 4 -->
+                        <div class="card">
+                            <img src="https://global.kfc.com/images/logo-placeholder.webp" alt="Image 4">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">In the Kitchen with FIT (Food...</a>
+                                <div class="date">January 05, 2021</div>
+                            </div>
+                        </div>
+                    <!-- Card 5 -->
+                        <div class="card">
+                            <img src="https://global.kfc.com/images/logo-placeholder.webp" alt="Image 5">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">KFC Malaysia Salad Recipe</a>
+                                <div class="date">December 14, 2020</div>
+                            </div>
+                        </div>
+                    <!-- Card 6 -->
+                        <div class="card">
+                            <img src="https://global.kfc.com/images/logo-placeholder.webp" alt="Image 6">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">Did Someone Say Gravy?</a>
+                                <div class="date">December 04, 2020</div>
+                            </div>
+                        </div>
+                </div>
+                <!-- Load More Button -->
+                <div class="load-more">
+                    <button>Load More</button>
+                </div>
+            </div>
+        </section>
+        <section></section>
+            <div class="container" id="people">
+                <!-- Header Section -->
+                <div class="section-header">
+                    <h3>SOCIAL IMPACT</h3>
+                    <p>We’re committed to chicken being done the right way, believing in all people and being sustainable.</p>
+                </div>
+            
+                <div class="card-container">
+                    <!-- Card Example (repeated 6 times) -->
+                        <div class="card one">
+                            <img src="https://cdn.sanity.io/images/kbqq3e0r/production/d9ac483f6b01f5fd095a49670c6744a59bab1e8d-1259x714.jpg?w=3840&q=100" alt="Image 1">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="https://global.kfc.com/press-releases/kfc-pioneers-qsr-industry-first-sign-language-training-for-all-employees">KFC Egypt Launches Feeding Minds Youth L...</a>
+                                <div class="date">September 09, 2023</div>
+                            </div>
+                        </div>
+                    <!-- Card 2 -->
+                        <div class="card">
+                            <img src="https://cdn.sanity.io/images/kbqq3e0r/production/79612f7ea39936f3ee5108f88e21ce8d3cfff14b-850x567.jpg?w=3840&q=100" alt="Image 2">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">Here Comes the Sun: KFC Philippines Inst</a>
+                                <div class="date">August 23, 2023</div>
+                            </div>
+                        </div>
+                    <!-- Card 3 -->
+                        <div class="card">
+                            <img src="https://cdn.sanity.io/images/kbqq3e0r/production/724abed68afa67db70af326d1e8424fb88dcaf6e-2048x1365.jpg?w=3840&q=100" alt="Image 3">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">KFC UK&I is Voting for a Better Planet</a>
+                                <div class="date">August 05, 2023</div>
+                            </div>
+                        </div>
+                    <!-- Card 4 -->
+                        <div class="card">
+                            <img src="https://cdn.sanity.io/images/kbqq3e0r/production/724abed68afa67db70af326d1e8424fb88dcaf6e-2048x1365.jpg?w=3840&q=100" alt="Image 4">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">Celebrating Progress, Spurring Passion:...</a>
+                                <div class="date">July 13, 2023</div>
+                            </div>
+                        </div>
+                    <!-- Card 5 -->
+                        <div class="card">
+                            <img src="https://global.kfc.com/images/logo-placeholder.webp" alt="Image 5">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">KFC transforms its restaurants into lear</a>
+                                <div class="date">May 03, 2023</div>
+                            </div>
+                        </div>
+                    <!-- Card 6 -->
+                        <div class="card">
+                            <img src="https://global.kfc.com/images/logo-placeholder.webp" alt="Image 6">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">What equity, inclusion & belonging (EI&B) </a>
+                                <div class="date">April 27, 2023</div>
+                            </div>
+                        </div>
+                </div>
+                <!-- Load More Button -->
+                <div class="load-more">
+                    <button>Load More</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container" id="people">
+                <!-- Header Section -->
+                <div class="section-header">
+                    <h3>DISTINCTIVELY KFC</h3>
+                    <p>Originality is what we do best. Learn more about our digital innovation, branded holidays and all other things KFC.</p>
+                </div>
+            
+                <div class="card-container">
+                    <!-- Card Example (repeated 6 times) -->
+                        <div class="card one">
+                            <img src="https://cdn.sanity.io/images/kbqq3e0r/production/70053576bffe247b98583a49224a724d0e998844-1858x1242.png?w=3840&q=100" alt="Image 1">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="https://global.kfc.com/press-releases/kfc-pioneers-qsr-industry-first-sign-language-training-for-all-employees">KFC Egypt Launches Feeding Minds Youth L...</a>
+                                <div class="date">September 09, 2023</div>
+                            </div>
+                        </div>
+                    <!-- Card 2 -->
+                        <div class="card">
+                            <img src="https://global.kfc.com/images/logo-placeholder.webp" alt="Image 2">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">Here Comes the Sun: KFC Philippines Inst</a>
+                                <div class="date">August 23, 2023</div>
+                            </div>
+                        </div>
+                    <!-- Card 3 -->
+                        <div class="card">
+                            <img src="https://global.kfc.com/images/logo-placeholder.webp" alt="Image 3">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">KFC UK&I is Voting for a Better Planet</a>
+                                <div class="date">August 05, 2023</div>
+                            </div>
+                        </div>
+                    <!-- Card 4 -->
+                        <div class="card">
+                            <img src="https://global.kfc.com/images/logo-placeholder.webp" alt="Image 4">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">Celebrating Progress, Spurring Passion:...</a>
+                                <div class="date">July 13, 2023</div>
+                            </div>
+                        </div>
+                    <!-- Card 5 -->
+                        <div class="card">
+                            <img src="https://global.kfc.com/images/logo-placeholder.webp" alt="Image 5">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">KFC transforms its restaurants into lear</a>
+                                <div class="date">May 03, 2023</div>
+                            </div>
+                        </div>
+                    <!-- Card 6 -->
+                        <div class="card">
+                            <img src="https://global.kfc.com/images/logo-placeholder.webp" alt="Image 6">
+                            <div class="discription">
+                                <div class="title">Blog</div>
+                                <a href="#">What equity, inclusion & belonging (EI&B) </a>
+                                <div class="date">April 27, 2023</div>
+                            </div>
+                        </div>
+                </div>
+                <!-- Load More Button -->
+                <div class="load-more">
+                    <button>Load More</button>
+                </div>
+            </div>
+        </section
+    </main>
+
+    <!-- footer -->
+    <div class="body-container">
+    <footer>
+        <div class="red-rod">
+            <div class="rod"></div>
+            <div class="rod"></div>
+            <div class="rod"></div>
+        </div>
+        <div class="container-footer">
+            <div class="container-footer-item">
+                <div class="itemf">
+                    <div class="title-footer">Campany</div>
+                    <ul class="list">
+                        <a href="#"><li>Our Ambitions</li></a>
+                        <a href="#"><li>Our Leadership</li></a>
+                        <a href="#"><li>Our History</li></a>
+                        <a href="#"><li>Where We Dish It Up</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Brand Impact</div>
+                    <ul class="list">
+                        <a href="#"><li>People & Communities</li></a>
+                        <a href="#"><li>Chicken & Nutrition</li></a>
+                        <a href="#"><li>Suppliers & Climate</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Careers</div>
+                    <ul class="list">
+                        <a href="#"><li>Who We Are</li></a>
+                        <a href="#"><li>Working Here</li></a>
+                        <a href="#"><li>Job Search</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Newsroom</div>
+                    <ul class="list">
+                        <a href="#"><li>Press Releases</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Media Contacts</li></a>
+                        <a href="#"><li>Media Assets</li></a>
+                    </ul class="list">
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <a href="#">
+                <div class="circle">
+                    <h1>in</h1>
+                </div>
+            </a>
+        </div>
+        <div class="policy">
+            <p>Copyright &copy; 2024 Company Ltd. All rights reserved. <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/footer-pages/privacy-policy">Privacy Policy</a>  |  <a href="term_use/term_use.html">Terms of Use</a>  |  <a href="sitemap/sitemap.html">Sitemap</a></p>
+        </div>
+    </footer>
+    </div>
+    <script>
+        $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $('.stories-buttons').addClass('white');
+            }
+            else{
+                $('.stories-buttons').removeClass('white');
+            }
+        })
+    </script>
+</body>
+</html>
