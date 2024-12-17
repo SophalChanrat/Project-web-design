@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC - Our Ambitions | KFC</title>
+    <link rel="stylesheet" href="card3.css">
+    <link rel="stylesheet" href="card4.css">
+    <link rel="stylesheet" href="card6.css">
+    <link href='https://fonts.googleapis.com/css?family=Anton SC' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/3fb3c3bd87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation -->
+    <div class="navigation-con">
+        <div class="navigation">
+            <!-- Logo -->
+            <a href="/">
+                <img src="logo.png" alt="KFC" class="logo">
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="name-nav">
+                <a href="#">COMPANY</a>
+                <a href="#">BRAND IMPACT</a>
+                <a href="#">CAREERS</a>
+                <a href="http://127.0.0.1:5501/Copy/indexCopy.html">NEWSROOM</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-con">
+                <form>
+                    <input type="text">
+                </form>
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+            <!-- bars Icon -->
+            <div class="icon" id="menuIcon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="mark"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Full-Screen Menu Overlay -->
+    <div class="overlay" id="menuOverlay">
+        <a href="#" onclick="toggleMenu()">COMPANY</a>
+        <a href="#" onclick="toggleMenu()">BRAND IMPACT</a>
+        <a href="#" onclick="toggleMenu()">CAREERS</a>
+        <a href="#" onclick="toggleMenu()">NEWSROOM</a>
+        <a href="#" onclick="toggleMenu()">SEARCH</a>
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            // Get elements
+            const overlay = document.getElementById("menuOverlay");
+            const menuIconBars = document.getElementById("menuIcon").children[0]; // Bars icon
+            const menuIconClose = document.getElementById("menuIcon").children[1]; // Close icon
+            const navigationCon = document.querySelector(".navigation-con");
+    
+            // Toggle the overlay's visibility
+            overlay.classList.toggle("active");
+    
+            // Change the icon between bars and close (x)
+            if (overlay.classList.contains("active")) {
+                menuIconBars.style.display = "none"; // Hide bars
+                menuIconClose.style.display = "block"; // Show close icon
+                navigationCon.style.backgroundColor = "pink"; // Change navigation background to pink
+            } else {
+                menuIconBars.style.display = "block"; // Show bars
+                menuIconClose.style.display = "none"; // Hide close icon
+                navigationCon.style.backgroundColor = "white"; // Reset navigation background to white
+            }
+        }
+    
+    </script>
+<div class="body-container">
+<main>
+        <section class="top">
+            <div class="red-rod">
+                <div class="rod"></div>
+                <div class="rod"></div>
+                <div class="rod"></div>
+            </div>
+            <h1>KFC Strengthens Ongoing Support of Youth Employability</h1>
+        </section>
+
+        <div class="main-left-right">
+            <div class="leftbar">
+                    <div class="date">August 12, 2024</div>
+                    <div>
+                        <p>KFC Collaborates with Plan International to Boost Youth Career Access</p>
+                    </div>
+                    <div>
+                        <p><strong>Plano, TX, August 12, 2024</strong>– In celebration of International Youth Day, KFC today announces a partnership with Plan International to support youth in their pursuit of skills and work of their choosing – at KFC restaurants and beyond. </p>
+                    </div>
+                    <div>
+                        <p>Plan International is working toward a world where all are equal. They partner with young people and their communities to provide resources and support to help youth overcome barriers and achieve their full potential. With a presence in 80+ countries,
+                            Plan International is one of the oldest and widest-reaching organizations that advances children's rights and equality for girls.</p>
+                    </div>
+                    <div>
+                        <p>Nearly 75 percent of young people aged 15 to 24 in 92 countries lack the basic skills needed for employment, according to the Education Commission anda <a href="#">UNICEF</a>
+                        . KFC’s partnership with Plan International will empower young people, especially girls and persons with disabilities, to pursue their professional dreams and goals through tailored training and resources. The partnership has four key objectives:
+                        </p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Providing pathways for young people to pursue decent work of their choosing </li>
+                            <li>Supporting young people to develop market-driven, relevant skills</li>
+                            <li>Fostering a work environment where youth can be authentically themselves</li>
+                            <li>Promoting positive social norms about young people as economic actors and valuable contributors</li>
+                        </ul>
+                    </div>
+                    <div><p>“We are so proud to link arms with Plan International to help feed the potential of youth around the world,” said Meredith Krones, Integrated Communications and Social Purpose Lead at KFC Global. “Working to address inequities and support individuals is one way KFC can make lasting impact in the communities we serve. Whether you choose to work at KFC or pursue a different passion, we know this work is building a brighter future for everyone involved.”</p></div>
+                    <div><p>To achieve its partnership objectives, KFC will contribute to Plan International’s <a href="#"> Skills & Work Fund</a>, co-develop best practice guides on youth-friendly recruitment, training and retention, and welcome young people to its corporate offices to experience a day in the life of a KFC executive.</p></div>
+                    <div><p>“Our partnership with KFC Global will create real opportunities for young people, especially young women and those with disabilities,” said Shanna Marzilli, President and CEO at Plan International USA. “This is about more than just jobs; it's about helping young people who seem to have the odds stacked against them to build the skills and confidence they need to shape their own futures."</p></div>
+                    <div><p>This work builds on KFC’s existing efforts to support youth employability, including initiatives in Thailand and the UK. <a href="#">KFC Thailand’s Bucket Search program </a>unlocks opportunities for drop-out students through confidence-building and vocational exploration. These work and study opportunities are aimed at socially re-integrating youth in support of Thailand’s zero dropout vision. Since 2023, Bucket Search has helped 130 school dropouts reintegrate into the education system. </p></div>
+                    <div> <p><strong>KFC United Kingdom and Ireland’s Hatch </strong>employability program focuses on opening doors to young people and unlocking the life-changing power of a first job. Through Hatch, 825 young people have increased access to growing skills and opportunities to promote confidence, resilience and aspiration while providing a viable pathway to sustainable employment. </p></div>
+                    <div><strong>About KFC</strong></div>
+                    <div> <p><a href="#">KFC</a> is a global chicken restaurant brand with a rich, decades-long history of success and innovation. It all started with one cook, Colonel Harland Sanders, who created the Original Recipe more than 90 years ago, a list of 11 secret herbs and spices scratched out on the back of the door to his kitchen. Today, while honoring our heritage, we remain committed to modernizing the colonel's vision, by serving feel-good food, at scale, through inclusive, equitable and sustainable business practices.  We continue to follow his formula for success, with real cooks breading and freshly preparing our delicious chicken by hand in more than 30,000 restaurants in 150 countries and territories around the world. KFC is a subsidiary of Yum! Brands, Inc. (NYSE: YUM.)​ </p></div>
+                    <div><strong>About Plan International</strong></div>
+                    <div <p>Plan International is an international development and humanitarian nonprofit that advances children’s rights and equality for girls. Working together with children, young people, supporters and partners, we strive for a just world, tackling the root causes of challenges children face. We are there from birth until adulthood, and we support children to prepare for and respond to crises and adversity, while particularly focusing on the experiences of girls. With more than 85 years of experience, we work to transform lives in more than 80 countries. We won’t stop until we are all equal. </p>></div>
+                    <div><p>For more information, please visit www.PlanUSA.org.</p></div>
+            </div>
+
+            <div class="sidebar">
+                <h3>TOP RELEASES</h3>
+                <div class="list">
+                        <ul>
+                            <a href="#">KFC® Unveils 2024 Holiday Bucket and Streetwear-Inspired Merch Collection, Plus Festive Feast Deals</a>
+                            <p>November 06, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC Punta Arenas: The End of the World’s Bucket is Here!</a>
+                            <p>October 17, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC Issues Battle Cry to Tenders Rivals - Introducing NEW Original Recipe® Tenders and Zesty Comeback Sauce from the Original Fried Chicken Brand</a>
+                            <p>October 14, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC® U.s. Names Catherine Tan-Gillespie Chief Marketing Officer & Chief Development Officer</a>
+                            <p>August 29, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC Strengthens Ongoing Support of Youth Employability</a>
+                            <p>August 12, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC Thailand Pops Up to Celebrate 40 years of Joy with “KENTUCKY TOWN BANGKOK”</a>
+                            <p>June 14, 2024</p>
+                        </ul>
+                </div>
+            </div>
+        </div>
+</main>
+</div>
+    <!-- footer -->
+<div class="body-container">
+    <footer>
+        <div class="red-rod">
+            <div class="rod"></div>
+            <div class="rod"></div>
+            <div class="rod"></div>
+        </div>
+        <div class="container-footer">
+            <div class="container-footer-item">
+                <div class="itemf">
+                    <div class="title-footer">Campany</div>
+                    <ul class="list">
+                        <a href="#"><li>Our Ambitions</li></a>
+                        <a href="#"><li>Our Leadership</li></a>
+                        <a href="#"><li>Our History</li></a>
+                        <a href="#"><li>Where We Dish It Up</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Brand Impact</div>
+                    <ul class="list">
+                        <a href="#"><li>People & Communities</li></a>
+                        <a href="#"><li>Chicken & Nutrition</li></a>
+                        <a href="#"><li>Suppliers & Climate</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Careers</div>
+                    <ul class="list">
+                        <a href="#"><li>Who We Are</li></a>
+                        <a href="#"><li>Working Here</li></a>
+                        <a href="#"><li>Job Search</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Newsroom</div>
+                    <ul class="list">
+                        <a href="#"><li>Press Releases</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Media Contacts</li></a>
+                        <a href="#"><li>Media Assets</li></a>
+                    </ul class="list">
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <a href="#">
+                <div class="circle">
+                    <h1>in</h1>
+                </div>
+            </a>
+        </div>
+        <div class="policy">
+            <p>Copyright &copy; 2024 Company Ltd. All rights reserved. <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/footer-pages/privacy-policy">Privacy Policy</a>  |  <a href="term_use/term_use.html">Terms of Use</a>  |  <a href="sitemap/sitemap.html">Sitemap</a></p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+

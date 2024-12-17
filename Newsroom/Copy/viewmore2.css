@@ -1,0 +1,729 @@
+body {
+    background-color: white;
+    margin: 0;
+    color: black;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    scroll-behavior: smooth;
+}
+.body-container{
+    width: 100%;
+    overflow-x: hidden;
+}
+.navigation-con {
+    height: 80px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    backdrop-filter: blur(25px);
+    background: rgba(255, 255, 255, 0.7);
+}
+
+
+.navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    gap: 5%;
+}
+
+.logo{
+    width: 128px;
+    height: 43.35px;
+}
+
+.name-nav{
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    display: inline-block;
+    transform: scaleY(1.5);
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    text-align: center;
+}
+
+.name-nav a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    cursor: pointer;
+    color: black;
+    position: relative;
+}
+
+.name-nav a:hover{
+    color: red;
+}
+
+.search-con {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    justify-self: flex-end;
+    width: 14vw;
+    position: relative;
+    background-color: white;
+}
+
+input {
+    width: 100%;
+    height: 5vh;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    padding-left: 10px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: black;
+    margin-left: auto;
+}
+
+.icon {
+    display: none;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+/* Full-Screen Menu Overlay */
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    --tw-bg-opacity: 1;
+    background-color: rgb(288,0,43,var(--tw-bg-opacity)); /* Red background as shown in the screenshot */
+    color: white;
+    z-index: 999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth transition for visual effects */
+    gap: 10px;
+    /* letter-spacing: 1px; */
+}
+
+.overlay.active {
+    display: flex;
+    --tw-bg-opacity: 1;
+    background-color: rgb(288,0,43,var(--tw-bg-opacity));
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 300;
+    text-align: center;
+    z-index: 99;
+}
+
+.icon #mark {
+    display: none;
+}
+
+
+.overlay a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25em;
+    
+    text-transform: uppercase;
+}
+
+.overlay a:hover {
+    color: black; /* Highlight effect */
+}
+
+.overlay a:nth-child(4){
+    color: black;
+}
+
+
+/* Responsive nav Styles */
+@media (min-width:1400px){
+    .navigation {
+        display: flex;
+        width: 1400px;
+    }
+}
+@media(max-width:1216px){
+    .navigation{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+@media(max-width:1155px){
+    .navigation{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navigation-con{
+        height: 48px;
+    }
+    .logo{
+        width: 64px;
+        height: 24.1px;
+    }
+
+    .name-nav,
+    .search-con {
+        display: none; /* Hide when screen size is below 1400px */
+    }
+
+    .icon{
+        display: block;
+        font-size: 1.25em;
+    }
+
+}
+
+@media (max-width: 768px) {
+    /* search */
+
+
+    .name-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .search-con {
+        width: 90%; /* Expand search bar for small screens */
+    }
+
+    .icon {
+        font-size: 1.5rem;
+        display: block; /* Show icon for smaller screens */
+    }
+
+    .name-nav,
+    .search-con {
+        display: none; /* Hide large screen elements */
+    }
+}
+
+@media (max-width: 425px) {
+    /* search */
+
+
+    .name-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .search-con {
+        width: 100%; /* Expand search bar for small screens */
+    }
+
+    .icon {
+        font-size: 1.5rem;
+        display: block; /* Show icon for smaller screens */
+    }
+
+    .name-nav,
+    .search-con {
+        display: none; /* Hide large screen elements */
+    }
+}
+
+
+
+/* footer */
+footer{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    position: relative;
+}
+.red-rod{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: 50px;
+}
+.rod{
+    width: 30px;
+    height: 100%;
+    background-color: red;
+}
+.container-footer{
+    width: 79%;
+    padding: 0 154px;
+}
+.container-footer-item{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 30px;
+    padding: 0 154px;
+    margin: 80px 0;
+    align-items: center;
+    text-align: left;
+}
+.itemf{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+ul{
+    padding: 0;
+}
+ul > a > li{
+    margin-bottom: 10px;
+}
+.itemf > ul >  a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+.container-footer-item >.itemf > .title-footer{
+    text-transform: uppercase;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.profile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.profile > a{
+    text-decoration: none;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+.profile > a > .circle{
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    align-items: center;
+}
+.policy{
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.policy >p > a{
+    color: white;
+}
+@media (max-width:1024px){
+
+    footer{
+            height: auto;
+        }
+        .title-footer::after {
+            content: '\25BC'; /* Down arrow */
+            font-size: 12px;
+            color: #fff;
+            transition: transform 0.3s;
+        }
+        .title-footer.open::after {
+            transform: rotate(-180deg); /* Flip arrow */
+        }
+        
+        .container-footer{
+            padding: 0;
+            width: 100%;
+        }
+        .container-footer-item{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 10px;
+            gap: 0;
+            margin: 20px 0;
+        }
+        .itemf{
+            width: 97%;
+            height: 25%;
+            padding:13px 0px 7px 0px;
+            border-top: 2px solid white;
+            align-items: center;
+            margin: 0;
+        }
+        .itemf:last-child{
+            border-bottom: 2px solid white;
+        }
+        .title-footer{
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+        .itemf > .title-footer:hover{
+            color: red;
+        }
+        .title-footer:hover::after {
+            color: red;
+        }
+        .container-footer-item > .itemf > .list{
+            display: none;
+            width: 100%;
+        }
+        .profile{
+            margin: 0;
+        }
+        .profile > a > .circle{
+            width: 50px;
+            height: 50px;
+        }
+        .profile > a > .circle > h1{
+            font-size: 36px;
+        }
+        .policy{
+            width: 400px;
+            margin: auto;
+        }
+    }
+/* main */
+main{
+    background-color: rgb(246,245,245);
+}
+/* Stories Section Styles */
+.stories-section {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(246,245,245);
+}
+.stories-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    letter-spacing: -2px;
+}
+
+.stories-text {
+    max-width: 810px;
+    margin: 0 auto 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Add scrolled state */
+.stories-buttons-wrapper.scrolled {
+    background-color: rgb(228, 0, 43);
+}
+
+/* Update existing stories-buttons class */
+.stories-buttons {
+    position: sticky;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 80px;  /* top-12 */
+    will-change: auto;
+    transition: background-color 1s ease;
+}
+.white{
+    background-color: red;
+}
+.story-btn {
+    background-color: rgb(228, 0, 43);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0 0.5rem;  /* Added horizontal margin */
+    transition: background-color 0.3s ease;
+}
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .stories-buttons {
+        gap: 8px;  /* Even smaller gap on tablet */
+    }
+    .stories-buttons {
+        position: sticky;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: 48px;  /* top-12 */
+        will-change: auto;
+        transition: background-color 1s ease;
+    }
+}
+
+@media (max-width: 768px) {
+    .stories {
+        padding: 1rem;
+    }
+
+    .stories h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .stories p {
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 0 1rem;
+    }
+    .stories-text {
+        padding: 0 1rem;
+    }
+    .stories-buttons {
+        align-items: center;
+        gap: 10px;
+    }
+   
+    .story-btn {
+        width: 100%;
+        max-width: 150px;
+        justify-content: center;
+        margin-left: 0;
+        white-space: nowrap;  /* Prevent text from wrapping */
+        overflow: visible;    /* Ensure text is visible */
+        text-overflow: clip;  /* Don't truncate text */
+        font-size: 0.9rem;   /* Maintain readable font size */
+        padding: 10px 20px;  /* Maintain padding */
+    }
+    .story-btn.food{
+        width: 100%;
+        max-width: 100px;
+    }
+    .hidden {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    .md\:block {
+        display: block;
+    }
+    .md\:hidden {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    .bar {
+        width: 20px;
+        height: 40px;
+    }
+    
+    .stories-section {
+        padding: 1.5rem 0.5rem;
+    }
+}
+/* header section */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    scroll-margin-top: 5rem;
+    padding-top: 2.5rem;
+    background-color: rgb(246,245,245);
+}
+
+/* Section header styles */
+.section-header {
+    margin-bottom: 2rem;
+}
+
+.section-header h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transform: scaleY(1.5);
+    letter-spacing: -1px;
+}
+
+.section-header p {
+    font-size: 1.125rem;
+    max-width: 32rem;
+}
+
+.card div{
+    padding:16px 0px 8px 0px ;
+    align-self: flex-start;
+    font-size: smaller;
+ }
+ .card .title{
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+ }
+ .card a{
+     font-weight: 800;
+     transform: scaleY(1.2);
+     font-size: 17px;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: black;
+ }
+ .discription{
+    padding: 1.5rem;
+ }
+ .card a:hover{
+     color: red;
+ }
+ .card .date {
+    font-size: 14px;
+}
+ .card {
+    background-color: white;
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+ }
+ .card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /* 3 cards per row */
+    row-gap: 30px;
+    padding: 20px;
+ }
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+ }
+ .card.four img{
+    width: 150px;
+    height: 200px;
+    align-self: center;
+    border-radius: 0px;
+ }
+ .discription {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align:left;
+}
+.load-more {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.load-more button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    min-width: 120px;
+}
+
+.load-more button:hover {
+    background-color: #b1001f;
+}
+
+/* Media Queries */
+@media (max-width: 1440px) {
+    .container {
+        padding: 2.5rem 2rem;
+    }
+}
+@media (max-width: 1024px) {
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        max-width: 64rem;
+        scroll-margin-top: 5rem;
+        padding-top: 5rem;
+    }
+    .stories-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .container {
+        padding: 1.5rem;
+    }
+
+    .section-header h3 {
+        font-size: 1.25rem;
+    }
+
+    .section-header p {
+        font-size: 1rem;
+    }
+
+    .discription {
+        padding: 1rem;
+    }
+
+    .discription a {
+        font-size: 1.25rem;
+    }
+}
+@media (max-width: 425px) {
+    .card-container {
+        grid-template-columns: 1fr; /* 1 column */
+    }
+    
+    .card {
+        width: 100%; /* Make cards full width on mobile */
+    }
+}
+.load-more{
+    margin-bottom: 20px;
+}
+

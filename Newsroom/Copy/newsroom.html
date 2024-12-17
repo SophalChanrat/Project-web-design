@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC - Our Ambitions | KFC</title>
+    <link rel="stylesheet" href="newsroom.css">
+    <link href='https://fonts.googleapis.com/css?family=Anton SC' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/3fb3c3bd87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation -->
+    <div class="navigation-con">
+        <div class="navigation">
+            <!-- Logo -->
+            <a href="/">
+                <img src="logo.png" alt="KFC" class="logo">
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="name-nav">
+                <a href="#">COMPANY</a>
+                <a href="#">BRAND IMPACT</a>
+                <a href="#">CAREERS</a>
+                <a href="#">NEWSROOM</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-con">
+                <form>
+                    <input type="text">
+                </form>
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+            <!-- bars Icon -->
+            <div class="icon" id="menuIcon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="mark"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Full-Screen Menu Overlay -->
+    <div class="overlay" id="menuOverlay">
+        <a href="#" onclick="toggleMenu()">COMPANY</a>
+        <a href="#" onclick="toggleMenu()">BRAND IMPACT</a>
+        <a href="#" onclick="toggleMenu()">CAREERS</a>
+        <a href="#" onclick="toggleMenu()">NEWSROOM</a>
+        <a href="#" onclick="toggleMenu()">SEARCH</a>
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            // Get elements
+            const overlay = document.getElementById("menuOverlay");
+            const menuIconBars = document.getElementById("menuIcon").children[0]; // Bars icon
+            const menuIconClose = document.getElementById("menuIcon").children[1]; // Close icon
+            const navigationCon = document.querySelector(".navigation-con");
+    
+            // Toggle the overlay's visibility
+            overlay.classList.toggle("active");
+    
+            // Change the icon between bars and close (x)
+            if (overlay.classList.contains("active")) {
+                menuIconBars.style.display = "none"; // Hide bars
+                menuIconClose.style.display = "block"; // Show close icon
+                navigationCon.style.backgroundColor = "pink"; // Change navigation background to pink
+            } else {
+                menuIconBars.style.display = "block"; // Show bars
+                menuIconClose.style.display = "none"; // Hide close icon
+                navigationCon.style.backgroundColor = "white"; // Reset navigation background to white
+            }
+        }
+    
+    </script>
+
+    <!-- main -->
+    <main>
+        <div class="main">
+            <section class="main-container">
+                <h1>NEWSROOM</h1>
+                <div class="line-1"></div>
+            </section>
+
+            <div class="label1">
+                <h2>Press Release</h2>
+                <div class="card-container">
+                    <div class="card zero">
+                        <img src="https://cdn.sanity.io/images/kbqq3e0r/production/47b731d4e4fd1f15b0024eec3feb0960c3702f89-800x445.jpg?w=3840&q=100" alt="Image 1">
+                        <div class="title">PRESS RELEASE</div>
+                        <a href="https://global.kfc.com/press-releases/kfc-pioneers-qsr-industry-first-sign-language-training-for-all-employees">KFC® Unveils 2024 Holiday Bucket and Str...</a>
+                        <div class="date">December 10, 2024</div>
+                    </div>
+                    <div class="card one">
+                        <img src="https://cdn.sanity.io/images/kbqq3e0r/production/f96834b8bd312564db37e80fdf3f7def4b79d784-5853x3899.jpg?w=3840&q=100" alt="Image 1">
+                        <div class="title">PRESS RELEASE</div>
+                        <a href="http://">KFC Pioneers QSR Industry-first Sign Lan...</a>
+                        <div class="date">November 06,2024</div>
+                    </div>
+                    <div class="card two">
+                        <img src="https://cdn.sanity.io/images/kbqq3e0r/production/63ddb0efd731a984d2bfd5abd8b2c442a019b314-1240x960.jpg?w=1920&q=100" alt="Image 1">
+                        <div class="title">PRESS RELEASE</div>
+                        <a href="http://">KFC Punta Arenas: The End of the World’s...</a>
+                        <div class="date">October 17,2024</div>
+                    </div>
+                    <div class="card three">
+                        <img src="https://cdn.sanity.io/images/kbqq3e0r/production/1b40b960e14251f9d1c7f8d33691fa86f14d52c6-1200x667.jpg?w=1920&q=100" alt="Image 1">
+                        <div class="title">PRESS RELEASE</div>
+                        <a href="http://">KFC Issues Battle Cry to Tenders Rivals...</a>
+                        <div class="date">October 14,2024</div>
+                    </div>
+                    <div class="card four">
+                        <img src="https://cdn.sanity.io/images/kbqq3e0r/production/4b9269024abf977e46b7b0c1fa9e1a8d4faf20c6-388x582.jpg?w=1920&q=100" alt="Image 1">
+                        <div class="title">PRESS RELEASE</div>
+                        <a href="http://">KFC® U.s. Names Catherine Tan-Gillespie...</a>
+                        <div class="date">August 29,2024</div>
+                    </div>
+                    <div class="card five">
+                        <img src="https://global.kfc.com/images/logo-placeholder.webp" alt="Image 1">
+                        <div class="title">PRESS RELEASE</div>
+                        <a href="http://">KFC Strengthens Ongoing Support of Youth...</a>
+                        <div class="date">August 12,2024</div>
+                    </div>
+                </div>
+                <a href="http://127.0.0.1:5501/Copy/viewmore.html" class="button">
+                    <button> View More</button>
+                </a>
+            </div>
+
+
+            <div class="label2">
+                <h2>Drumstick</h2>
+
+                <div class="card-container">
+                    <div class="card six">
+                        <img src="https://cdn.sanity.io/images/kbqq3e0r/production/70053576bffe247b98583a49224a724d0e998844-1858x1242.png?w=1920&q=100" alt="Image 1">
+                        <div class="title">BLOG</div>
+                        <a href="http://">QSR Evolution Conference 2024: Takeaways...</a>
+                        <div class="date">September 19,2024</div>
+                    </div>
+                    <div class="card seven">
+                        <img src="https://global.kfc.com/images/logo-placeholder.webp" alt="Image 1">
+                        <div class="title">BLOG</div>
+                        <a href="http://">QSR Evolution Conference 2023: Taking a...</a>
+                        <div class="date">September 18,2023</div>
+                    </div>
+                    <div class="card eight">
+                        <img src="https://cdn.sanity.io/images/kbqq3e0r/production/d9ac483f6b01f5fd095a49670c6744a59bab1e8d-1259x714.jpg?w=1920&q=100" alt="Image 1">
+                        <div class="title">BLOG</div>
+                        <a href="http://">KFC Egypt Launches Feeding Minds Youth L...</a>
+                        <div class="date">September 09,2023</div>
+                    </div>
+                </div>
+
+                <a href="" class="button">
+                    <button> View More</button>
+                </a>
+            </div>
+
+            <div class="media">
+                <p class="media-container">Media Contacts And Public Relations</p>
+                <div class="line-1"></div>
+                <p class="title">Looking to get in touch with our PR team or download brand assets? You’ve come to the right place.</p>
+                <a href="http://127.0.0.1:5501/Copy/media.html" class="contact_info">View Media Contact Info </a><i class="fa fa-greater-than"></i> 
+                <a href="http://127.0.0.1:5501/Copy/media2.html" class="downloads">View Media Downloads</a> <i class="fa fa-greater-than"></i>
+            </div> 
+        </main>
+    </main>
+    <!-- footer -->
+    <div class="body-container">
+    <footer>
+        <div class="red-rod">
+            <div class="rod"></div>
+            <div class="rod"></div>
+            <div class="rod"></div>
+        </div>
+        <div class="container-footer">
+            <div class="container-footer-item">
+                <div class="itemf">
+                    <div class="title-footer">Campany</div>
+                    <ul class="list">
+                        <a href="#"><li>Our Ambitions</li></a>
+                        <a href="#"><li>Our Leadership</li></a>
+                        <a href="#"><li>Our History</li></a>
+                        <a href="#"><li>Where We Dish It Up</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Brand Impact</div>
+                    <ul class="list">
+                        <a href="#"><li>People & Communities</li></a>
+                        <a href="#"><li>Chicken & Nutrition</li></a>
+                        <a href="#"><li>Suppliers & Climate</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Careers</div>
+                    <ul class="list">
+                        <a href="#"><li>Who We Are</li></a>
+                        <a href="#"><li>Working Here</li></a>
+                        <a href="#"><li>Job Search</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Newsroom</div>
+                    <ul class="list">
+                        <a href="#"><li>Press Releases</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Media Contacts</li></a>
+                        <a href="#"><li>Media Assets</li></a>
+                    </ul class="list">
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <a href="#">
+                <div class="circle">
+                    <h1>in</h1>
+                </div>
+            </a>
+        </div>
+        <div class="policy">
+            <p>Copyright &copy; 2024 Company Ltd. All rights reserved. <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/footer-pages/privacy-policy">Privacy Policy</a>  |  <a href="term_use/term_use.html">Terms of Use</a>  |  <a href="sitemap/sitemap.html">Sitemap</a></p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
