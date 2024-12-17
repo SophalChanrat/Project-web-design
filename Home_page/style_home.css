@@ -697,6 +697,12 @@ ul > a > li{
         margin: auto;
     }
 }
+@media (min-width:1400px){
+    .navigation {
+        display: flex;
+        width: 1400px;
+    }  
+}
 @media (max-width: 768px){
     .stat{
         height: auto;
