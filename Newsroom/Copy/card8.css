@@ -294,6 +294,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-self: flex-start;
+    color: white;
 }
 ul{
     padding: 0;
@@ -304,7 +305,7 @@ ul > a > li{
 .itemf > ul >  a{
     text-decoration: none;
     list-style: none;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .container-footer-item >.itemf > .title-footer{
     text-transform: uppercase;
@@ -330,7 +331,7 @@ ul > a > li{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: white;
+    background-color: rgb(255, 252, 252);
     align-items: center;
 }
 .policy{
@@ -339,7 +340,7 @@ ul > a > li{
     text-align: center;
 }
 .policy >p > a{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 @media (max-width:1024px){
 
