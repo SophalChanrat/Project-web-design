@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC - Our Ambitions | KFC</title>
+    <link rel="stylesheet" href="card2.css">
+    <link href='https://fonts.googleapis.com/css?family=Anton SC' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/3fb3c3bd87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation -->
+    <div class="navigation-con">
+        <div class="navigation">
+            <!-- Logo -->
+            <a href="/">
+                <img src="logo.png" alt="KFC" class="logo">
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="name-nav">
+                <a href="#">COMPANY</a>
+                <a href="#">BRAND IMPACT</a>
+                <a href="#">CAREERS</a>
+                <a href="http://127.0.0.1:5501/Copy/indexCopy.html">NEWSROOM</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-con">
+                <form>
+                    <input type="text">
+                </form>
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+            <!-- bars Icon -->
+            <div class="icon" id="menuIcon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="mark"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Full-Screen Menu Overlay -->
+    <div class="overlay" id="menuOverlay">
+        <a href="#" onclick="toggleMenu()">COMPANY</a>
+        <a href="#" onclick="toggleMenu()">BRAND IMPACT</a>
+        <a href="#" onclick="toggleMenu()">CAREERS</a>
+        <a href="#" onclick="toggleMenu()">NEWSROOM</a>
+        <a href="#" onclick="toggleMenu()">SEARCH</a>
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            // Get elements
+            const overlay = document.getElementById("menuOverlay");
+            const menuIconBars = document.getElementById("menuIcon").children[0]; // Bars icon
+            const menuIconClose = document.getElementById("menuIcon").children[1]; // Close icon
+            const navigationCon = document.querySelector(".navigation-con");
+    
+            // Toggle the overlay's visibility
+            overlay.classList.toggle("active");
+    
+            // Change the icon between bars and close (x)
+            if (overlay.classList.contains("active")) {
+                menuIconBars.style.display = "none"; // Hide bars
+                menuIconClose.style.display = "block"; // Show close icon
+                navigationCon.style.backgroundColor = "pink"; // Change navigation background to pink
+            } else {
+                menuIconBars.style.display = "block"; // Show bars
+                menuIconClose.style.display = "none"; // Hide close icon
+                navigationCon.style.backgroundColor = "white"; // Reset navigation background to white
+            }
+        }
+    
+    </script>
+<div class="body-container">
+    <main>
+            <section class="top">
+                <div class="red-rod">
+                    <div class="rod"></div>
+                    <div class="rod"></div>
+                    <div class="rod"></div>
+                </div>
+                <h1>KFC PIONEERS QSR INDUSTRY-FIRST SIGN LANGUAGE TRAINING FOR ALL EMPLOYEES</h1>
+            </section>
+        <div class="main-left-right">
+            <div class="leftbar">
+                    <div class="date">November 06, 2024</div>
+                    <div class="info">
+                    <div class="font">
+                        <p>~ Launches India’s first interactive Sign Language kiosk ~</p>
+                        <p>~ Indian Sign Language (ISL) training rolled out for 17,000+ employees across the country~</p>
+                    </div>
+                    <div class="img-one">
+                        <img src="https://cdn.sanity.io/images/kbqq3e0r/production/f96834b8bd312564db37e80fdf3f7def4b79d784-5853x3899.jpg?w=3840&q=100" alt="">
+                    </div>
+                    <p>
+                        <strong>National, 20th September 2024:</strong> 
+                        <em>Sometimes, all it takes is a sign to understand each other.</em>
+                    </p>
+                    <p>
+                        In celebration of <strong>International Day of Sign Languages</strong>, KFC is taking a monumental step in the hospitality industry, as it becomes the <strong>first QSR in India</strong> to launch a <strong>Sign Language training program</strong> for <strong>100% of its employees</strong>. The first-of-its-kind training is required to be undertaken by all <strong>17,000+ KFC employees</strong>, who are spread across <strong>240+ cities</strong> in <strong>1200+ restaurants</strong>, as well as those working in the brand’s corporate offices.
+                    </p>                  
+                    <p>Designed in consultation with a Sign Language expert, the online training covers <strong> multiple modules</strong> specifically crafted for
+                        a beginner to grasp the <strong>basics of ISL</strong>. The first module is focused on the alphabets in ISL, while subsequent ones
+                        focus on greetings and regular phrases that are key for holding a conversation in Sign Language.
+                        The training is part of KFC India’s <strong>Kshamata program</strong>, which is aimed at <strong>feeding people’s potential</strong> ,
+                        and <strong> bridging the gender and ability gap</strong>. Through Kshamata, KFC is committed towards empowering women
+                        and the speech and hearing-impaired across restaurants; and aims to <strong>double the number</strong> of <strong>speech and 
+                            hearing impaired (SHI) employees, by 2026</strong>.
+                    </p>
+                    <div class="flex-img">
+                        <img src="https://cdn.sanity.io/images/kbqq3e0r/production/de4f7d017d9a21f6db3acbf01a3aa84e999fe4aa-4284x6425.jpg?w=3840&q=100" alt="">
+                        <img src="https://cdn.sanity.io/images/kbqq3e0r/production/de4f7d017d9a21f6db3acbf01a3aa84e999fe4aa-4284x6425.jpg?w=3840&q=100" alt="">
+                    </div>
+                    <p>This year, as an extension of the #SpeakSign campaign, KFC aims to bring the entire hospitality industry
+                     together with the launch of India’s <strong>first interactive Sign Language kiosk</strong> that allows individuals to learn
+                     to order their favourite food items from <strong> across brands & cuisines using Indian Sign Language</strong>. This exhibit 
+                     was unveiled at Select CityWalk, New Delhi and Ambience Mall, Gurugram, inviting consumers to learn to sign
+                      30+ popular food items like Pizza, Burger, Dosa, Momos, Pasta, along with KFC favourites like Hot & Crispy,
+                     Chicken popcorn, Zinger.
+                    </p>
+                    <p>Speaking about the initiative, <strong> Moksh Chopra, General Manager, KFC India & Partner Countries</strong>, said,
+                     “Through our KFC Kshamata program, one of the areas of focus has been to help unlock the potential and
+                      opportunities for the Hearing-impaired community. One of the most important steps towards this is spreading
+                       the usage of Sign Language and since 2021, our annual #SpeakSign campaign focuses on enabling this goal.
+                        This year, we are proud to announce that 100% of our teams will be trained in basic Indian Sign Language, 
+                        making our restaurants across the country more inclusive. We’re also taking this Sign Language movement beyond
+                         just our organization into the hospitality industry. With the interactive kiosk at popular locations, we’re
+                          encouraging consumers to learn to order their favourite food items across brands using Sign Language.”
+                    </p>
+                    <div class="img-three">
+                        <img src="https://cdn.sanity.io/images/kbqq3e0r/production/2fb2c6beb72e40c2b9bd3ca7c3ec8cdc555fc1fe-5154x4023.jpg?w=3840&q=100" alt="">
+                    </div>
+                    <p>KFC India’s franchise partners <strong>Devyani International Limited (DIL)</strong> and <strong>Sapphire Foods India Limited (SFIL)</strong> have played an integral part in the Kshamata journey.</p>
+                    <p><strong>Pradeep Das, CEO, KFC at Devyani International Limited (DIL)</strong> said, “All of us at DIL are proud partners of KFC’s Kshamata initiative. Bridging the ability gap is critical
+                     to creating accessible and inclusive workplaces. The rollout of Sign Language training is a forward-thinking approach which will help ensure that we’re fostering an environment
+                      across all our restaurants and offices where speech and hearing-impaired individuals, whether teams or consumers, can interact confidently.”</p>
+                    <p><strong>Deepak Taluja, President & CEO-KFC at Sapphire Foods India Limited (SFIL)</strong> said, “Creating a culture where everyone feels valued is at the heart of SFIL, and all of us are extremely proud of the KFC Kshamata initiative. The rollout of Sign Language training for all employees is a significant step, and shows how small but powerful changes can help businesses foster truly inclusive environments. We at SFIL are committed towards feeding people’s potential with KFC Kshamata.”</p>
+                    <p>The interactive kiosks are available in Select CityWalk, New Delhi & Ambience Mall, Gurugram until 21st September.</p>
+                    <p>Consumers can visit any of the <strong>54 Special KFCs </strong>(operated by speech and hearing impaired employees) on International Day of Sign Language on 23rd September, and learn to #SpeakSign with team members as they encourage communication in ISL. <strong> Special Sign Language buckets</strong> and <strong>Sign Language menus</strong> have also been created to help consumers learn how to sign and order their KFC favorites, along with short tutorial videos on KFC’s social media channels and website.</p>
+                    <span class="underline">About KFC</span>
+                    <p>KFC, a subsidiary of Yum! Brands, Inc. (NYSE: YUM.), is a global chicken restaurant brand with a rich, decades-long history of success and innovation. It all started with one cook, Colonel Harland Sanders, who created a finger lickin’ good recipe more than 80 years ago, a list of secret herbs and spices scratched out on the back of the door to his kitchen. Today we still follow his formula for success, with real cooks breading and freshly preparing our delicious chicken by hand in more than 26,000 restaurants in over 145 countries and territories around the world.</p>
+                    <p>For more information, visit <a href="#">https://online.kfc.co.in/</a></p>
+                    <div class="bold-text">
+                        <strong>For further information, please contact:</strong>
+                        <strong>Edelman India</strong>
+                    </div>
+                    <p>Disha Gupta |<a href="#">Disha.Gupta@edelman.com </a> | 7339932471</p>
+                    <p>Ananya Jain |<a href="#"> Ananya.Jain@edelman.com </a> | 8287406706</p>
+                    <div class="bold-text">
+                        <strong>KFC India</strong>
+                    </div>
+                    <p>Shreya Verma |<a href="#"> Shreya.Verma@yum.com </a></p>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <h3>TOP RELEASES</h3>
+                <div class="list">
+                        <ul>
+                            <a href="#">KFC® Unveils 2024 Holiday Bucket and Streetwear-Inspired Merch Collection, Plus Festive Feast Deals</a>
+                            <p>November 06, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC Punta Arenas: The End of the World’s Bucket is Here!</a>
+                            <p>October 17, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC Issues Battle Cry to Tenders Rivals - Introducing NEW Original Recipe® Tenders and Zesty Comeback Sauce from the Original Fried Chicken Brand</a>
+                            <p>October 14, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC® U.s. Names Catherine Tan-Gillespie Chief Marketing Officer & Chief Development Officer</a>
+                            <p>August 29, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC Strengthens Ongoing Support of Youth Employability</a>
+                            <p>August 12, 2024</p>
+                        </ul>
+                        <ul>
+                            <a href="#">KFC Thailand Pops Up to Celebrate 40 years of Joy with “KENTUCKY TOWN BANGKOK”</a>
+                            <p>June 14, 2024</p>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+    <!-- footer -->
+<div class="body-container">
+    <footer>
+        <div class="red-rod">
+            <div class="rod"></div>
+            <div class="rod"></div>
+            <div class="rod"></div>
+        </div>
+        <div class="container-footer">
+            <div class="container-footer-item">
+                <div class="itemf">
+                    <div class="title-footer">Campany</div>
+                    <ul class="list">
+                        <a href="#"><li>Our Ambitions</li></a>
+                        <a href="#"><li>Our Leadership</li></a>
+                        <a href="#"><li>Our History</li></a>
+                        <a href="#"><li>Where We Dish It Up</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Brand Impact</div>
+                    <ul class="list">
+                        <a href="#"><li>People & Communities</li></a>
+                        <a href="#"><li>Chicken & Nutrition</li></a>
+                        <a href="#"><li>Suppliers & Climate</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Careers</div>
+                    <ul class="list">
+                        <a href="#"><li>Who We Are</li></a>
+                        <a href="#"><li>Working Here</li></a>
+                        <a href="#"><li>Job Search</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Newsroom</div>
+                    <ul class="list">
+                        <a href="#"><li>Press Releases</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Media Contacts</li></a>
+                        <a href="#"><li>Media Assets</li></a>
+                    </ul class="list">
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <a href="#">
+                <div class="circle">
+                    <h1>in</h1>
+                </div>
+            </a>
+        </div>
+        <div class="policy">
+            <p>Copyright &copy; 2024 Company Ltd. All rights reserved. <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/footer-pages/privacy-policy">Privacy Policy</a>  |  <a href="term_use/term_use.html">Terms of Use</a>  |  <a href="sitemap/sitemap.html">Sitemap</a></p>
+        </div>
+    </footer>
+</div>
+</body>
