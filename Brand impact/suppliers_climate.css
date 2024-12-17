@@ -17,10 +17,11 @@ body{
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 1);
     backdrop-filter: blur(25px);
     background: rgba(255, 255, 255, 0.7);
 }
+
 
 .navigation {
     display: flex;
@@ -36,17 +37,17 @@ body{
     gap: 5%;
 }
 
-.navigation-con > .navigation > a >  .logo{
+.logo{
     width: 128px;
-    height: 32.35px;
+    height: 43.35px;
 }
 
 .name-nav{
     font-size: 1.25rem;
     font-weight: 700;
-    transform: scaleY(1.5);
     margin: auto;
     position: relative;
+    transform: scaleY(1.5);
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -66,7 +67,7 @@ body{
 }
 
 .name-nav a:hover{
-    color: rgb(239, 0, 43);
+    color: red;
 }
 
 .search-con {
@@ -74,8 +75,7 @@ body{
     align-items: center;
     border: 2px solid black;
     border-radius: 30px;
-    margin-left: auto;
-    justify-content: flex-end;
+    justify-self: flex-end;
     width: 14vw;
     position: relative;
     background-color: transparent;
@@ -83,7 +83,7 @@ body{
 
 input {
     width: 100%;
-    height: 50px;
+    height: 43px;
     border: none;
     border-radius: 30px;
     outline: none;
@@ -91,7 +91,7 @@ input {
     background-color: transparent;
 }
 
-button {
+.search-con >button {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -116,7 +116,7 @@ button {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgb(239, 0, 43); /* Red background as shown in the screenshot */
+    background-color: red; /* Red background as shown in the screenshot */
     color: white;
     z-index: 999;
     flex-direction: column;
@@ -130,7 +130,7 @@ button {
 
 .overlay.active {
     display: flex;
-    background-color: rgb(239, 0, 43);
+    background-color: red;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -138,10 +138,10 @@ button {
     font-size: 1em;
     text-align: center;
     z-index: 99;
-    font-weight: 300;
+    font-weight: 800;
 }
 
-.icon > #mark {
+.icon #mark {
     display: none;
 }
 
@@ -151,16 +151,11 @@ button {
     color: white;
     font-size: 1.3em;
     font-weight: 800;
-    transform: scaleY(1.5);
     text-transform: uppercase;
 }
 
 .overlay a:hover {
     color: black; /* Highlight effect */
-}
-
-.overlay a:nth-child(2){
-    color: black;
 }
 
 .main{
