@@ -346,6 +346,7 @@ body {
 }
 
 .img-section video {
+    margin-top: 1.5px;
     width: 100%;
     height: auto;
     display: block;

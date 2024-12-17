@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC - People & Communities | KFC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="people_communities_style.css">
+    <script src="people_communities.js"></script>
+</head>
+<body>
+    <div class="navigation-con">
+        <div class="navigation">
+            <!-- Logo -->
+            <a href="">
+                <img src="Image/Logo_new.png" alt="KFC" class="logo">
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="name-nav">
+                <a href="#">COMPANY</a>
+                <a href="brandimpact.html">BRAND IMPACT</a>
+                <a href="#">CAREERS</a>
+                <a href="#">NEWSROOM</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-con">
+                <form>
+                    <input type="text">
+                </form>
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+            <!-- bars Icon -->
+            <div class="icon" id="menuIcon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="mark"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Full-Screen Menu Overlay -->
+    <div class="overlay" id="menuOverlay">
+        <a href="#" onclick="toggleMenu()">COMPANY</a>
+        <a href="#" onclick="toggleMenu()">BRAND IMPACT</a>
+        <a href="#" onclick="toggleMenu()">CAREERS</a>
+        <a href="#" onclick="toggleMenu()">NEWSROOM</a>
+        <a href="#" onclick="toggleMenu()">SEARCH</a>
+    </div>    
+    <script>
+    function toggleMenu() {
+        // Get elements
+        const overlay = document.getElementById("menuOverlay");
+        const menuIconBars = document.getElementById("menuIcon").children[0]; // Bars icon
+        const menuIconClose = document.getElementById("menuIcon").children[1]; // Close icon
+        const navigationCon = document.querySelector(".navigation-con");
+
+        // Toggle the overlay's visibility
+        overlay.classList.toggle("active");
+
+        // Change the icon between bars and close (x)
+        if (overlay.classList.contains("active")) {
+            menuIconBars.style.display = "none"; // Hide bars
+            menuIconClose.style.display = "block"; // Show close icon
+            navigationCon.style.backgroundColor = "pink"; // Change navigation background to pink
+        } else {
+            menuIconBars.style.display = "block"; // Show bars
+            menuIconClose.style.display = "none"; // Hide close icon
+            navigationCon.style.backgroundColor = "white"; // Reset navigation background to white
+        }
+    }
+    </script>
+
+    <div class="top">
+        <img src="Image/Pic5.jpg" alt="Pic5">
+        <h1>People & Communities</h1>
+    </div>
+    <div class="main">
+        <div class="info1">
+            <div class="top_info1">
+                <a href="brandimpact.html">Brand Impact</a>
+                <p>></p>
+                <div class="top_p1">
+                    <p>People & Communities</p>
+                </div>
+            </div>
+            <h2>Social Purpose</h2>
+            <div class="top_p2">
+                <p>We’re in the chicken business, but we’re also in the people business.</p>
+                <p>With nearly one million team members serving thousands of communities, we have a passion for fighting inequality by feeding people’s potential.</p>
+                <p>Our global food donation program shares surplus protein-rich chicken to those who need it while our upskilling programs for youth, women, refugees and people with disabilities creates confidence and unlocks opportunities for a brighter future. And we work alongside incredible nonprofit partners to do it.</p>
+            </div>
+            <div class="pics_info1">
+                <div class="pic1">
+                    <img src="Image/Pic6.jpg" alt="Pic6">
+                </div>
+                <div class="pic2">
+                    <img src="Image/Pic7.jpg" alt="Pic7">
+                </div>
+                <div class="pic3">
+                    <img src="Image/Pic8.jpg" alt="Pic8">
+                </div>
+            </div>
+        </div>
+
+        <div class="info2">
+            <h3>Upskilling & Opportunities</h3>
+            <div class="pics_info2">
+                <button class="img1_button" onclick="openModal('popupModal1')">
+                    <div class="img1">
+                        <img src="Image/Pic9.jpg" alt="Pic9">
+                        <h3>Global</h3>
+                    </div>
+                </button>
+                
+                <button class="img2_button" onclick="openModal('popupModal2')">
+                    <div class="img2">
+                        <img src="Image/Pic10.jpg" alt="Pic10">
+                        <h3>Thailand</h3>
+                    </div>
+                </button>
+                <button class="img3_button" onclick="openModal('popupModal3')">
+                    <div class="img3">
+                        <img src="Image/Pic11.jpg" alt="Pic11">
+                        <h3>Egypt</h3>
+                    </div>
+                </button>
+                <button class="img4_button" onclick="openModal('popupModal4')">
+                    <div class="img4">
+                        <img src="Image/Pic12.jpg" alt="Pic12">
+                        <h3>Australia and New Zealand</h3>
+                    </div>
+                </button>
+                <button class="img5_button" onclick="openModal('popupModal5')">
+                    <div class="img5">
+                        <img src="Image/Pic13.jpg" alt="Pic13">
+                        <h3>Europe</h3>
+                    </div>
+                </button>
+                <button class="img6_button" onclick="openModal('popupModal6')">
+                    <div class="img6">
+                        <img src="Image/Pic14.jpg" alt="Pic14">
+                        <h3>United Kingdom & Ireland</h3>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div id="popupModal1" class="modal">
+            <div class="modal-content">
+                <div class="top">
+                    <span class="close-button" onclick="closeModal('popupModal1')"><i class="fa-solid fa-x"></i></span>
+                    <img src="Image/Pic9.jpg" alt="Popup Image">
+                </div>
+                <div class="info_modal1">
+                    <h2>GLOBAL</h2>
+                    <p>
+                        Level Up is KFC’s unified effort to feed people’s potential through upskilling and employability training. 
+                        From literacy and language skills to ready-for-work courses and in-restaurant apprenticeships, 
+                        we want every person to feel confident and excited about the future they choose.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="popupModal2" class="modal">
+            <div class="modal-content">
+                <div class="top">
+                    <span class="close-button" onclick="closeModal('popupModal2')"><i class="fa-solid fa-x"></i></span>
+                    <img src="Image/Pic10.jpg" alt="Popup Image">
+                </div>
+                <div class="info_modal2">
+                    <h2>THAILAND</h2>
+                    <p>
+                        KFC Thailand partners with the Thai government’s Equitable Education Fund to identify students who have dropped out of school and to provide them with skill building and potential pathways to the workforce. After evaluation, each youth participant engages in a Life Skills Camp that prepares them for local jobs. Successful participants are offered jobs at KFC or other local employers.
+                    </p>
+                    <button>
+                        <a href="https://www.kfc.co.th/social-impact">Learn More</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="popupModal3" class="modal">
+            <div class="modal-content">
+                <div class="top">
+                    <span class="close-button" onclick="closeModal('popupModal3')"><i class="fa-solid fa-x"></i></span>
+                    <img src="Image/Pic11.jpg" alt="Popup Image">
+                </div>
+                <div class="info_modal3">
+                    <h2>EGYPT</h2>
+                    <p>
+                        KFC Egypt is working to improve literacy for vulnerable youth between 12 and 35 years old through its program, Feeding Minds. Basic literacy skills are key to students keeping pace with their school level and advancing their education, yet many youth learners face barriers and fall behind. Feeding Minds works to reach vulnerable youth learners and improve their literacy through instruction and skill building to enable them to pursue their education and employment opportunities.
+                    </p>
+                </div>
+            </div>
+        </div>  
+
+        <div id="popupModal4" class="modal">
+            <div class="modal-content">
+                <div class="top">
+                    <span class="close-button" onclick="closeModal('popupModal4')"><i class="fa-solid fa-x"></i></span>
+                    <img src="Image/Pic12.jpg" alt="Popup Image">
+                </div>
+                <div class="info_modal4">
+                    <h2>AUSTRALIA AND NEW ZEALAND</h2>
+                    <p>
+                        With more than 90% of KFC Australia’s team members being under the age of 25, the KFC Youth Foundation is our chance to help more young Aussies beyond the walls of our restaurants. To date, KFC SOPAC has raised more than $10,000,000 to help give young people the mental wellbeing skills and support they need now and to unlock opportunities in the future.
+                    </p>
+                    <button>
+                        <a href="https://www.kfc.com.au/kfc-youth-foundation">Learn More</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="popupModal5" class="modal">
+            <div class="modal-content">
+                <div class="top">
+                    <span class="close-button" onclick="closeModal('popupModal5')"><i class="fa-solid fa-x"></i></span>
+                    <img src="Image/Pic13.jpg" alt="Popup Image">
+                </div>
+                <div class="info_modal5">
+                    <h2>EUROPE</h2>
+                    <p>
+                        KFC Europe’s S.T.A.R.T. program works to empower refugees through employment and helps them integrate and contribute to their host communities. By stepping in to provide more than a job, KFC helps refugees prepare for the workforce, connects them to language courses and vocational training and unlocks opportunities to gain experience, certification and transferable qualifications. By 2026, KFC Europe aims to support 2,500 refugees across the region.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="popupModal6" class="modal">
+            <div class="modal-content">
+                <div class="top">
+                    <span class="close-button" onclick="closeModal('popupModal6')"><i class="fa-solid fa-x"></i></span>
+                    <img src="Image/Pic14.jpg" alt="Popup Image">
+                </div>
+                <div class="info_modal6">
+                    <h2>UNITED KINGDOM & IRELAND</h2>
+                    <p>
+                        KFC’s United Kingdom and Ireland (UK&I) program aims to empower youth who are commonly perceived as unemployable or lacking experience by engaging them in roughly 20 hours of skill building and work readiness workshops offered by UK Youth. Participants participate in four weeks of paid work and are guaranteed an interview for a position at KFC. As part of this work, KFC UK&I has also pledged that by 2030, one-third of new hires will be young people who have faced barriers to employment, helping 6,000 young people get jobs.
+                    </p>
+                    <button>
+                        <a href="https://www.kfc.co.uk/behind-the-bucket/our-people">Learn More</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="info3">
+            <h3>Food Security</h3>
+            <div class="pics_info3" onclick="openModal('popupModal7'); event.stopPropagation();">
+                <button class="img7">
+                    <img src="Image/Pic15.jpg" alt="Pic15">
+                    <h3>Global</h3>
+                </button>
+                <button class="img8" onclick="openModal('popupModal8'); event.stopPropagation();">
+                    <img src="Image/Pic16.jpg" alt="Pic16">
+                    <h3>Latin America & Caribbean</h3>
+                </button>
+                <button class="img9" onclick="openModal('popupModal9'); event.stopPropagation();">
+                    <img src="Image/Pic17.jpg" alt="Pic17">
+                    <h3>South Africa</h3>
+                </button>
+            </div>
+        </div>
+
+        <div id="popupModal7" class="modal">
+            <div class="modal-content">
+                <div class="top">
+                    <span class="close-button" onclick="closeModal('popupModal7')"><i class="fa-solid fa-x"></i></span>
+                    <img src="Image/Pic15.jpg" alt="Popup Image">
+                </div>
+                <div class="info_modal7">
+                    <h2>GLOBAL</h2>
+                    <p>
+                        KFC Food Donation is an international program that feeds communities in need while reducing waste and carbon emissions. Since it began in 1999, KFC has donated nearly 100 million pounds of surplus food worldwide. By donating food rather than sending it to landfills, we have avoided emissions of more than 207,000 tons of carbon dioxide equivalent (CO2eq) and saved more than 1.3 million gallons of water.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="popupModal8" class="modal">
+            <div class="modal-content">
+                <div class="top">
+                    <span class="close-button" onclick="closeModal('popupModal8')"><i class="fa-solid fa-x"></i></span>
+                    <img src="Image/Pic16.jpg" alt="Popup Image">
+                </div>
+                <div class="info_modal8">
+                    <h2>LATIN AMERICA & CARIBBEAN</h2>
+                    <p>
+                        Description: Across our Latin America & Caribbean market, our food donation program is called Harvest and ensures surplus food is donated to local charities who feed those in need. Mexico, Ecuador, Puerto Rico, Costa Rica and many other countries throughout the market are making a positive impact on their communities through their regular donation of protein-rich chicken. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="popupModal9" class="modal">
+            <div class="modal-content">
+                <div class="top">
+                    <span class="close-button" onclick="closeModal('popupModal9')"><i class="fa-solid fa-x"></i></span>
+                    <img src="Image/Pic17.jpg" alt="Popup Image">
+                </div>
+                <div class="info_modal9">
+                    <h2>SOUTH AFRICA</h2>
+                    <p>
+                        Through KFC Africa’s Add Hope program, we provide funding to feed children in need. Customers can donate a 2 rand coin every time they visit their local KFC restaurant. Since 2009, KFC South Africa has served more than 250 million meals with a bold goal of serving 500 million meals by 2030.                   
+                    </p>
+                    <button>
+                        <a href="https://purpose.kfc.co.za/add-hope/">Learn More</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="info4">
+            <h2>Equity, Inclusion & Belonging</h2>
+            <div class="grid_info4">
+                <div class="p1_info4">
+                    <p class="p1">We foster an inclusive culture where everyone is welcomed and valued. Every day, we work with active allyship at our core and ensure our teams reflect the communities we serve.</p>
+                    <p class="p2">In 2024, we announced that we have achieved gender balance across our global leadership team and restaurant support centers.</p>
+                    <p class="p3">We proudly gather two Communities of Belonging which every employee across the globe is welcome to join…</p>
+                </div>
+                <div class="p2_info4">
+                    <p>
+                        <strong class="shine">SHINE</strong>
+                        is dedicated to strengthening representation, empowering women at every level of leadership and providing transformative development opportunities and experiences in leadership and transformative development opportunities and experiences.
+                    </p>
+                    <p>
+                        <strong class="Kentucky Fried Pride">Kentucky Fried Pride</strong>
+                        is dedicated to supporting and celebrating the LGBTQ+ community and its allies, thereby creating a true sense of belonging for all.
+                    </p>
+                </div>
+                <div class="pics_info4">
+                    <img src="Image/Pic18.png" alt="Pic18">
+                    <img src="Image/Pic19.png" alt="Pic19">
+                </div>
+            </div>
+        </div>
+        </div>
+        <footer>
+            <div class="red-rod">
+                <div class="rod"></div>
+                <div class="rod"></div>
+                <div class="rod"></div>
+            </div>
+            <div class="container-footer">
+                <div class="container-footer-item">
+                    <div class="itemf">
+                        <div class="title-footer">Campany</div>
+                        <ul class="list">
+                            <a href="#"><li>Our Ambitions</li></a>
+                            <a href="#"><li>Our Leadership</li></a>
+                            <a href="#"><li>Our History</li></a>
+                            <a href="#"><li>Where We Dish It Up</li></a>
+                        </ul class="list">
+                    </div>
+                    <div class="itemf">
+                        <div class="title-footer">Brand Impact</div>
+                        <ul class="list">
+                            <a href="#"><li>People & Communities</li></a>
+                            <a href="#"><li>Chicken & Nutrition</li></a>
+                            <a href="#"><li>Suppliers & Climate</li></a>
+                        </ul class="list">
+                    </div>
+                    <div class="itemf">
+                        <div class="title-footer">Careers</div>
+                        <ul class="list">
+                            <a href="#"><li>Who We Are</li></a>
+                            <a href="#"><li>Working Here</li></a>
+                            <a href="#"><li>Job Search</li></a>
+                        </ul class="list">
+                    </div>
+                    <div class="itemf">
+                        <div class="title-footer">Newsroom</div>
+                        <ul class="list">
+                            <a href="#"><li>Press Releases</li></a>
+                            <a href="#"><li>Blog</li></a>
+                            <a href="#"><li>Media Contacts</li></a>
+                            <a href="#"><li>Media Assets</li></a>
+                        </ul class="list">
+                    </div>
+                </div>
+            </div>
+            <div class="profile">
+                <a href="#">
+                    <div class="circle">
+                        <h1>in</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="policy">
+                <p>Copyright &copy; 2024 Company Ltd. All rights reserved. <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/footer-pages/privacy-policy">Privacy Policy</a>  |  <a href="term_use/term_use.html">Terms of Use</a>  |  <a href="sitemap/sitemap.html">Sitemap</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

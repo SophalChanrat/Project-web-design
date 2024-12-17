@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC - Chicken Welfare | KFC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="chicken_welfare.css">
+    <script src="chicken_welfare.js"></script>
+</head>
+<body>
+    <div class="navigation-con">
+        <div class="navigation">
+            <!-- Logo -->
+            <a href="/">
+                <img src="Image/Logo_new.png" alt="KFC" class="logo">
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="name-nav">
+                <a href="#">COMPANY</a>
+                <a href="brandimpact.html">BRAND IMPACT</a>
+                <a href="#">CAREERS</a>
+                <a href="#">NEWSROOM</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-con">
+                <form>
+                    <input type="text">
+                </form>
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+            <!-- bars Icon -->
+            <div class="icon" id="menuIcon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="mark"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Full-Screen Menu Overlay -->
+    <div class="overlay" id="menuOverlay">
+        <a href="#" onclick="toggleMenu()">COMPANY</a>
+        <a href="#" onclick="toggleMenu()">BRAND IMPACT</a>
+        <a href="#" onclick="toggleMenu()">CAREERS</a>
+        <a href="#" onclick="toggleMenu()">NEWSROOM</a>
+        <a href="#" onclick="toggleMenu()">SEARCH</a>
+    </div>
+    
+    <div class="main">
+        <div class="top">
+            <div class="blocks">
+                <div class="block1"></div>
+                <div class="block2"></div>
+                <div class="block3"></div>
+            </div>
+            <div class="middle">
+                <h1 class="h1_1">Chicken Welfare:</h1>
+                <h1 class="h1_2">Done The Right Way</h1>
+            </div>
+        </div>
+
+        <div class="info1">
+            <div class="top_2">
+                <a class="a1" href="brandimpact.html">Brand Impact</a>
+                <p>></p>
+                <a class="a2" href="chicken_nutrition.html">Chicken Nurtition</a>
+                <p>></p>
+                <p class="p1">Chicken Welfare</p>
+            </div>
+            <div class="middle">
+                <div class="part1">
+                    <h2>At KFC, We're Proud Of Our Chicken.</h2>
+                    <p>We take pride in the exceptional quality of the food we serve. It’s what the Colonel stood for and what our customers expect. Our commitment to quality includes:</p>
+                </div>
+                <div class="part2">
+                    <div class="pic1">
+                        <img src="Image/Pic27.png" alt="Pic27">
+                        <p>Chickens that are healthy and well cared for</p>
+                    </div>
+                    <div class="pic2">
+                        <img src="Image/Pic28.png" alt="Pic28">
+                        <p>Farmers who adhere to recognized welfare standards</p>
+                    </div>
+                    <div class="pic3">
+                        <img src="Image/Pic29.png" alt="Pic29">
+                        <p>Supply chains that are sustainable and secure</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="slide1" id="slide_1">
+              <h1>2018</h1>
+              <p>KFC U.S. reduced the use of antibiotics important to human medicine in their U.S. poultry supply chains.</p>
+            </div>
+            <div class="slide2" id="slide_2">
+              <p>KFC U.K. & Ireland published its first annual chicken welfare progress report.                .</p>
+              <h1>2019</h1>
+            </div>
+            <div class="slide3" id="slide_3">
+              <h1>2020</h1>
+              <p>KFC announced new global chicken key welfare indicators (KWIs), addressing chicken mobility, health, mortality, and stress.
+                </p>
+            </div>
+            <div class="slide4" id="slide_4">
+                <p>KFC Western Europe transitioned to 100% cage-free eggs.
+                </p>
+                <h1>2020</h1>
+            </div>
+            <div class="dots-arrows">
+              <span class="prev" onclick="prevSlide()">&#8249;</span>
+              <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+              </div>
+              <span class="next" onclick="nextSlide()">&#8250;</span>
+            </div>
+        </div>
+
+        <div class="info2">
+            <div class="part1">
+                <h2>AT KFC, WE LOVE OUR CHICKEN.</h2>
+                <P>We share that love with customers across the world, and we’re committed to providing you with food that is safe, free from cruelty and raised humanely.</P>
+            </div>
+            <div class="part2">
+                <div class="block1"></div>
+                <div class="block2"></div>
+                <div class="block3"></div>
+            </div>
+        </div>
+
+        <div class="info3">
+            <h2>WE'RE UP FOR THE CHALLENGE.</h2>
+            <p>All throughout our supply chain, we’re working to tackle worthy and complex challenges like food security, food safety and sustainability.</p>
+        </div>
+        
+        <div class="info4">
+            <h2>AT KFC, WE'RE PROUD OF OUR CHICKEN.</h2>
+            <div class="pics">
+                <div class="pic1">
+                    <img src="Image/Pic30.png" alt="Pic30">
+                    <h3>Driven by Science and Data</h3>
+                    <p>Our approach to chicken welfare is based on the latest science, data and research into what constitutes the best standards of care when raising chickens for food that optimizes welfare, food quality and sustainability outcomes.</p>
+                </div>
+                <div class="pic2">
+                    <img src="Image/Pic31.png" alt="Pic31">
+                    <h3>Guided by Care and Compassion</h3>
+                    <p>While raising chickens for food is our business model, we are dedicated to establishing best practices and following verified scientific thinking.</p>
+                </div>
+                <div class="pic3">
+                    <img src="Image/Pic32.png" alt="Pic32">
+                    <h3>Focused on Sustainability and Security</h3>
+                    <p>Food production is an important part of the global conversation on sustainability. Our chicken welfare approach is part of an overall commitment to greater sustainability across our supply chain.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="red-rod">
+            <div class="rod"></div>
+            <div class="rod"></div>
+            <div class="rod"></div>
+        </div>
+        <div class="container-footer">
+            <div class="container-footer-item">
+                <div class="itemf">
+                    <div class="title-footer">Campany</div>
+                    <ul class="list">
+                        <a href="#"><li>Our Ambitions</li></a>
+                        <a href="#"><li>Our Leadership</li></a>
+                        <a href="#"><li>Our History</li></a>
+                        <a href="#"><li>Where We Dish It Up</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Brand Impact</div>
+                    <ul class="list">
+                        <a href="#"><li>People & Communities</li></a>
+                        <a href="#"><li>Chicken & Nutrition</li></a>
+                        <a href="#"><li>Suppliers & Climate</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Careers</div>
+                    <ul class="list">
+                        <a href="#"><li>Who We Are</li></a>
+                        <a href="#"><li>Working Here</li></a>
+                        <a href="#"><li>Job Search</li></a>
+                    </ul class="list">
+                </div>
+                <div class="itemf">
+                    <div class="title-footer">Newsroom</div>
+                    <ul class="list">
+                        <a href="#"><li>Press Releases</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Media Contacts</li></a>
+                        <a href="#"><li>Media Assets</li></a>
+                    </ul class="list">
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <a href="#">
+                <div class="circle">
+                    <h1>in</h1>
+                </div>
+            </a>
+        </div>
+        <div class="policy">
+            <p>Copyright &copy; 2024 Company Ltd. All rights reserved. <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/footer-pages/privacy-policy">Privacy Policy</a>  |  <a href="term_use/term_use.html">Terms of Use</a>  |  <a href="sitemap/sitemap.html">Sitemap</a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .dot{
     color: red;
@@ -13,7 +13,7 @@ body{
 }
 footer{
     width: 100%;
-    height: 600px;
+    height: 550px;
     background-color: black;
     position: relative;
 }
@@ -31,7 +31,7 @@ footer{
 }
 .container-footer{
     width: 79%;
-    padding: 0 154px;
+    padding: 0 10%;
 }
 .container-footer-item{
     display: grid;
@@ -52,6 +52,7 @@ ul{
 }
 ul > a > li{
     margin-bottom: 10px;
+    font-weight: 700;
 }
 .itemf > ul >  a{
     text-decoration: none;
@@ -62,7 +63,8 @@ ul > a > li{
     text-transform: uppercase;
     color: white;
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 700;
+    transform: scaleY(1.3);
     margin-bottom: 10px;
 }
 .profile{
@@ -73,8 +75,12 @@ ul > a > li{
 .profile > a{
     text-decoration: none;
     color: black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 24px;
+
+}
+.profile > a > .circle > h1{
+    text-transform: lowercase;
+    font-weight: 700;
 }
 .profile > a > .circle{
     display: flex;
@@ -84,25 +90,28 @@ ul > a > li{
     border-radius: 50%;
     background-color: white;
     align-items: center;
+    text-transform: lowercase;
+    
 }
 .policy{
     width: 100%;
     color: white;
     text-align: center;
+    font-weight: 600;
 }
-.policy >p > a{
+.policy >p , a{
     color: white;
+    font-size: 16px;
 }
 .title{
     font-size: 64px;
-    font-weight: bold;
-}
-.title , h1{
-    text-transform: uppercase;
+    font-weight: 750;
+    transform: scaley(1.3);
 }
 h1{
     font-size: 36px;
-    font-weight:800;
+    font-weight: 800;
+    transform: scaleY(1.3);
 }
 p{
     font-size: 20px;
@@ -143,6 +152,7 @@ p{
 .logo{
     width: 128px;
     height: 32.35px;
+    margin-left: 48px;
 }
 img{
     width: 100%;
@@ -151,11 +161,10 @@ img{
 }
 
 .name-nav{
-    font-size: 1.25em;
-    font-weight: bold;
+    font-size: 1.45em;
+    transform: scaleY(1.4);
     margin: auto;
     position: relative;
-
     display: flex;
     flex-direction: row;
     gap: 32px;
@@ -163,11 +172,12 @@ img{
 }
 
 .name-nav a {
+    font-weight: 800;
     text-decoration: none;
+    transform: scaleY(1.4);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bolder;
     margin: auto;
     cursor: pointer;
     color: black;
@@ -178,10 +188,6 @@ img{
     color: rgb(196, 15, 15);
 }
 
-.name-nav a:first-child{
-    text-decoration: none;
-    color: rgb(196, 15, 15);
-}
 
 .search-con {
     display: flex;
@@ -198,12 +204,16 @@ input {
     width: 100%;
     height: 4vh;
     border: none;
+    outline: none;
+    padding-left: 10px;
     border-radius: 25px;
 }
 
 button {
     background-color: transparent;
     border: none;
+    cursor: pointer;
+    color: black;
 }
 
 .icon {
@@ -253,8 +263,9 @@ button {
 .overlay a {
     text-decoration: none;
     color: white;
-    font-size: 1.25em;
-    font-weight: bold;
+    font-size: 1.35em;
+    transform: scaleY(1.3);
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -262,15 +273,20 @@ button {
     color: black; /* Highlight effect */
 }
 
-.overlay a:first-child{
-    color: black;
-}
 @media (max-width:1024px){
     
     .title , h1{
         text-transform: uppercase;
-        font-weight:800;
-        font-size: 30px;
+        font-weight:700;
+    }
+    .title{
+        font-size: 64px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    .container > .first-term > #first{
+        font-size: 48px;
     }
     .container{
         padding: 20px 20px;
