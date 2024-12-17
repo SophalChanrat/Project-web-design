@@ -90,7 +90,7 @@ input {
     background-color: transparent;
 }
 
-.search-con >button {
+button {
     background-color: transparent;
     border: none;
     cursor: pointer;
